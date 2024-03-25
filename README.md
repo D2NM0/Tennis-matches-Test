@@ -1,49 +1,66 @@
-Overview
-========
 
-Welcome to Astronomer! This project was generated after you ran 'astro dev init' using the Astronomer CLI. This readme describes the contents of the project, as well as how to run Apache Airflow on your local machine.
+# Pipeline pour l'ingestion des données dans Bigquery
 
-Project Contents
-================
+## description
+Un projet dans lequel nous allons créer un pipeline de données ETL pour charger des données des matches dans des tournoie de tennis dans BigQuery en utilisant Airflow et DBT.
 
-Your Astro project contains the following files and folders:
+## Architecture de solution 
 
-- dags: This folder contains the Python files for your Airflow DAGs. By default, this directory includes two example DAGs:
-    - `example_dag_basic`: This DAG shows a simple ETL data pipeline example with three TaskFlow API tasks that run daily.
-    - `example_dag_advanced`: This advanced DAG showcases a variety of Airflow features like branching, Jinja templates, task groups and several Airflow operators.
-- Dockerfile: This file contains a versioned Astro Runtime Docker image that provides a differentiated Airflow experience. If you want to execute other commands or overrides at runtime, specify them here.
-- include: This folder contains any additional files that you want to include as part of your project. It is empty by default.
-- packages.txt: Install OS-level packages needed for your project by adding them to this file. It is empty by default.
-- requirements.txt: Install Python packages needed for your project by adding them to this file. It is empty by default.
-- plugins: Add custom or community plugins for your project to this file. It is empty by default.
-- airflow_settings.yaml: Use this local-only file to specify Airflow Connections, Variables, and Pools instead of entering them in the Airflow UI as you develop DAGs in this project.
+- Configurer l'environnement Airflow local avec Astro CLI.
+- Créer un pipeline de données en utilisant Airflow.
+- Charger des fichiers CSV dans Google Cloud Storage.
+- Ingester les données dans BigQuery.
+- Intégrer dbt pour exécuter des modèles de données avec Airflow.
 
-Deploy Your Project Locally
-===========================
 
-1. Start Airflow on your local machine by running 'astro dev start'.
+<img src="images/arch.png" alt="Architecture" style="width:600px;"/>
 
-This command will spin up 4 Docker containers on your machine, each for a different Airflow component:
+### Pipeline sur airflow 
+<img src="images/airflow.png" alt="pipeline" style="width:600px;"/>
 
-- Postgres: Airflow's Metadata Database
-- Webserver: The Airflow component responsible for rendering the Airflow UI
-- Scheduler: The Airflow component responsible for monitoring and triggering tasks
-- Triggerer: The Airflow component responsible for triggering deferred tasks
+### Modelisation de données
+<img src="images/modeling.png" alt="Architecture" style="width:600px;"/>
 
-2. Verify that all 4 Docker containers were created by running 'docker ps'.
+### Outils utilisé 
+- **Google Cloud Platform (GCP)**
+  - Cloud Storage
+  - BigQuery
+- **Orchestration:** Apache Airflow
+- **Transformation :** dbt
 
-Note: Running 'astro dev start' will start your project with the Airflow Webserver exposed at port 8080 and Postgres exposed at port 5432. If you already have either of those ports allocated, you can either [stop your existing Docker containers or change the port](https://docs.astronomer.io/astro/test-and-troubleshoot-locally#ports-are-not-available).
+## Utilisation
+#### 1. Cloner le repo:
+D'abord, clonez le dépôt en utilisant HTTP :
+```
+git clone https://github.com/D2NM0/Tennis-matches-Test.git
+```
 
-3. Access the Airflow UI for your local Airflow project. To do so, go to http://localhost:8080/ and log in with 'admin' for both your Username and Password.
 
-You should also be able to access your Postgres Database at 'localhost:5432/postgres'.
+#### 2. Configuration GCP:
 
-Deploy Your Project to Astronomer
-=================================
+1. Configurez le compte de service pour accéder à ce projet et téléchargez la clé d'authentification (.json). Veuillez vérifier que le compte de service dispose de toutes les autorisations suivantes :
+    - Viewer
+    - Administrateur de stockage (Storage Admin)
+    - Administrateur d'objets de stockage (Storage Object Admin)
+    - Administrateur BigQuery (BigQuery Admin)
+2. Téléchargez le fichier JSON de la clé d'authentification et remplacez-le par le fichier service-account.json dans le chemin :
+```
+include/gcp/service-account.json
+```
+3. Téléchargez le SDK pour la configuration locale.
 
-If you have an Astronomer account, pushing code to a Deployment on Astronomer is simple. For deploying instructions, refer to Astronomer documentation: https://docs.astronomer.io/cloud/deploy-code/
+4. Activez les options suivantes dans la section API et services :
+    - API de gestion des identités et des accès (IAM)
+    - API des informations d'identification des comptes de service IAM
 
-Contact
-=======
 
-The Astronomer CLI is maintained with love by the Astronomer team. To report a bug or suggest a change, reach out to our support.
+#### 4. Pipeline de Airflow 
+1. Configurez vos identifiants Google Cloud Platform.
+2. Créez et configurez les connexions nécessaires dans Airflow :
+Dans l'interface utilisateur d'Airflow :
+- Airflow → Admin → Connexions
+    - id : gcp
+    - type : Google Cloud
+    - Chemin de la clé : /usr/local/airflow/include/gcp/sa.json
+- Testez la connexion (Cliquez sur le bouton 'Test') → Sauvegardez (Cliquez sur le bouton 'Sauvegarder')
+- Lancez le pipeline et surveillez son exécution.
