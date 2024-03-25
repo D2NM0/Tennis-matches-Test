@@ -1,0 +1,1133 @@
+[0m03:20:06.257220 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738bfdb90cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738bfdd2e850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738bfdb6a950>]}
+
+
+============================== 03:20:06.260147 | b72488e3-bfc6-412c-bd2f-04ada7e66a40 ==============================
+[0m03:20:06.260147 [info ] [MainThread]: Running with dbt=1.7.10
+[0m03:20:06.261244 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'warn_error': 'None', 'target_path': 'None', 'cache_selected_only': 'False', 'invocation_command': 'dbt deps', 'partial_parse': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'indirect_selection': 'eager', 'introspect': 'True', 'log_cache_events': 'False', 'write_json': 'True', 'debug': 'False', 'profiles_dir': '/usr/local/airflow/include/dbt', 'static_parser': 'True', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'log_path': '/usr/local/airflow/include/dbt/logs', 'no_print': 'None', 'log_format': 'default'}
+[0m03:20:07.389133 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b72488e3-bfc6-412c-bd2f-04ada7e66a40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738bfda44890>]}
+[0m03:20:07.390807 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-o4ia2ol6'
+[0m03:20:07.391825 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m03:20:07.475257 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m03:20:07.478241 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m03:20:07.507326 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m03:20:07.521463 [info ] [MainThread]: Updating lock file in file path: /usr/local/airflow/include/dbt/package-lock.yml
+[0m03:20:07.524648 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-d4uwcyqk'
+[0m03:20:07.530038 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m03:20:07.891669 [info ] [MainThread]: Installed from version 1.1.1
+[0m03:20:07.892550 [info ] [MainThread]: Up to date!
+[0m03:20:07.893313 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'b72488e3-bfc6-412c-bd2f-04ada7e66a40', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738bfdbe0d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738bfdbc1c10>]}
+[0m03:20:07.894863 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 1.6911099, "process_user_time": 2.779273, "process_kernel_time": 0.224587, "process_mem_max_rss": "109428", "process_in_blocks": "8568", "process_out_blocks": "2240"}
+[0m03:20:07.895674 [debug] [MainThread]: Command `dbt deps` succeeded at 03:20:07.895471 after 1.69 seconds
+[0m03:20:07.896266 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738c02733d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738c02740910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738bfedd5f90>]}
+[0m03:20:07.897047 [debug] [MainThread]: Flushing usage events
+[0m03:20:56.787002 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71fcdcba8b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71fcdcb93d50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71fcdcb87fd0>]}
+
+
+============================== 03:20:56.789436 | 654d440d-f82b-425b-b551-be7dc7d7a2ed ==============================
+[0m03:20:56.789436 [info ] [MainThread]: Running with dbt=1.7.10
+[0m03:20:56.790517 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'version_check': 'True', 'debug': 'False', 'warn_error': 'None', 'target_path': 'None', 'introspect': 'True', 'log_path': '/usr/local/airflow/include/dbt/logs', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'no_print': 'None', 'quiet': 'False', 'static_parser': 'True', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'printer_width': '80', 'fail_fast': 'False', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'write_json': 'True', 'log_cache_events': 'False', 'use_colors': 'True'}
+[0m03:20:58.296357 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "mdtt_dbt", target "dev" invalid: Runtime Error
+    Must specify schema
+[0m03:20:58.298037 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 1.5591278, "process_user_time": 3.893587, "process_kernel_time": 0.533863, "process_mem_max_rss": "212656", "process_in_blocks": "6768", "process_out_blocks": "16", "command_success": false}
+[0m03:20:58.298968 [debug] [MainThread]: Command `dbt run` failed at 03:20:58.298725 after 1.56 seconds
+[0m03:20:58.299674 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71fcdcb69790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71fcdcb87fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71fcdcb87550>]}
+[0m03:20:58.300369 [debug] [MainThread]: Flushing usage events
+[0m03:23:19.866366 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x775e80bfd210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x775e80e7e1d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x775e80bb7e90>]}
+
+
+============================== 03:23:19.868654 | 5f03429d-c577-4f93-8a7c-3a83969b4eda ==============================
+[0m03:23:19.868654 [info ] [MainThread]: Running with dbt=1.7.10
+[0m03:23:19.869630 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'log_cache_events': 'False', 'fail_fast': 'False', 'debug': 'False', 'version_check': 'True', 'quiet': 'False', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'introspect': 'True', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'target_path': 'None', 'log_path': '/usr/local/airflow/include/dbt/logs', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'cache_selected_only': 'False', 'static_parser': 'True', 'use_experimental_parser': 'False', 'write_json': 'True', 'no_print': 'None', 'warn_error': 'None', 'use_colors': 'True', 'indirect_selection': 'eager'}
+[0m03:23:20.981137 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "mdtt_dbt", target "dev" invalid: Runtime Error
+    Must specify schema
+[0m03:23:20.983094 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 1.1636459, "process_user_time": 3.489158, "process_kernel_time": 0.554277, "process_mem_max_rss": "212588", "process_out_blocks": "8", "command_success": false, "process_in_blocks": "0"}
+[0m03:23:20.984161 [debug] [MainThread]: Command `dbt run` failed at 03:23:20.983882 after 1.16 seconds
+[0m03:23:20.984877 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x775e80b9ebd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x775e80bfcd10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x775e855964d0>]}
+[0m03:23:20.985604 [debug] [MainThread]: Flushing usage events
+[0m03:24:17.115379 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bc52b21fb90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bc52b21e950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bc52b21d8d0>]}
+
+
+============================== 03:24:17.117599 | 750f84ff-4f57-4096-83ea-d5a6b398b5d0 ==============================
+[0m03:24:17.117599 [info ] [MainThread]: Running with dbt=1.7.10
+[0m03:24:17.118681 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'log_format': 'default', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'write_json': 'True', 'target_path': 'None', 'warn_error': 'None', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'no_print': 'None', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'printer_width': '80', 'use_colors': 'True', 'version_check': 'True', 'log_path': '/usr/local/airflow/include/dbt/logs', 'quiet': 'False', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'introspect': 'True', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])'}
+[0m03:24:18.262556 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "mdtt_dbt", target "dev" invalid: Runtime Error
+    Must specify schema
+[0m03:24:18.264165 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 1.1971943, "process_user_time": 3.576397, "process_kernel_time": 0.517165, "process_mem_max_rss": "212156", "process_out_blocks": "8", "command_success": false, "process_in_blocks": "0"}
+[0m03:24:18.265041 [debug] [MainThread]: Command `dbt run` failed at 03:24:18.264822 after 1.20 seconds
+[0m03:24:18.265667 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bc52b1cd950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bc52b21f010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bc52b21f150>]}
+[0m03:24:18.266328 [debug] [MainThread]: Flushing usage events
+[0m03:25:47.375149 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71fa15fdd650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71fa15fee190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71fa15fed8d0>]}
+
+
+============================== 03:25:47.377512 | c80adca6-5579-43fa-a0a4-62ce29debfc6 ==============================
+[0m03:25:47.377512 [info ] [MainThread]: Running with dbt=1.7.10
+[0m03:25:47.378537 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'use_colors': 'True', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'introspect': 'True', 'target_path': 'None', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'indirect_selection': 'eager', 'debug': 'False', 'use_experimental_parser': 'False', 'quiet': 'False', 'log_path': '/usr/local/airflow/include/dbt/logs', 'static_parser': 'True', 'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'log_format': 'default', 'write_json': 'True', 'no_print': 'None', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/'}
+[0m03:25:48.443259 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "mdtt_dbt", target "dev" invalid: Runtime Error
+    Must specify schema
+[0m03:25:48.444909 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 1.1249038, "process_user_time": 3.527709, "process_kernel_time": 0.503387, "process_mem_max_rss": "211708", "process_out_blocks": "16", "command_success": false, "process_in_blocks": "0"}
+[0m03:25:48.445781 [debug] [MainThread]: Command `dbt run` failed at 03:25:48.445551 after 1.13 seconds
+[0m03:25:48.446415 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71fa15fef150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71fa15f9d850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71fa1ab7c950>]}
+[0m03:25:48.447033 [debug] [MainThread]: Flushing usage events
+[0m03:27:20.995287 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74d170da5610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74d170dda450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74d173dcd910>]}
+
+
+============================== 03:27:20.997679 | 624063ab-c355-459a-83c5-5fa6e5fa4dc4 ==============================
+[0m03:27:20.997679 [info ] [MainThread]: Running with dbt=1.7.10
+[0m03:27:20.998741 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'fail_fast': 'False', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'partial_parse': 'True', 'debug': 'False', 'introspect': 'True', 'indirect_selection': 'eager', 'static_parser': 'True', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'target_path': 'None', 'log_path': '/usr/local/airflow/include/dbt/logs', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'no_print': 'None', 'write_json': 'True', 'version_check': 'True', 'quiet': 'False', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'printer_width': '80'}
+[0m03:27:22.281311 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '624063ab-c355-459a-83c5-5fa6e5fa4dc4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74d15c828a10>]}
+[0m03:27:22.398821 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '624063ab-c355-459a-83c5-5fa6e5fa4dc4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74d170dc8ed0>]}
+[0m03:27:22.399852 [info ] [MainThread]: Registered adapter: bigquery=1.7.6
+[0m03:27:22.427196 [debug] [MainThread]: checksum: b88efa780424265bbbd676e971356ada6a7ea9debd0a80a519a6d2707465340d, vars: {}, profile: , target: , version: 1.7.10
+[0m03:27:22.428877 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m03:27:22.429954 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '624063ab-c355-459a-83c5-5fa6e5fa4dc4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74d15c5ab3d0>]}
+[0m03:27:23.834017 [debug] [MainThread]: 1603: static parser failed on transform/fact_bet.sql
+[0m03:27:23.872766 [debug] [MainThread]: 1602: parser fallback to jinja rendering on transform/fact_bet.sql
+[0m03:27:23.875151 [debug] [MainThread]: 1699: static parser successfully parsed transform/dim_etltime.sql
+[0m03:27:23.878912 [debug] [MainThread]: 1699: static parser successfully parsed transform/dim_account.sql
+[0m03:27:23.882682 [debug] [MainThread]: 1603: static parser failed on transform/dim_match.sql
+[0m03:27:23.890894 [debug] [MainThread]: 1602: parser fallback to jinja rendering on transform/dim_match.sql
+[0m03:27:24.061796 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '624063ab-c355-459a-83c5-5fa6e5fa4dc4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74d15c518e90>]}
+[0m03:27:24.181495 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '624063ab-c355-459a-83c5-5fa6e5fa4dc4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74d157ba9050>]}
+[0m03:27:24.182536 [info ] [MainThread]: Found 4 models, 1 source, 0 exposures, 0 metrics, 568 macros, 0 groups, 0 semantic models
+[0m03:27:24.183555 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '624063ab-c355-459a-83c5-5fa6e5fa4dc4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74d17465c210>]}
+[0m03:27:24.186500 [info ] [MainThread]: 
+[0m03:27:24.187921 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m03:27:24.190655 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_able-rarity-417913'
+[0m03:27:24.191722 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:27:24.617657 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_able-rarity-417913, now list_able-rarity-417913_modeo_tt)
+[0m03:27:24.618477 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m03:27:25.007151 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '624063ab-c355-459a-83c5-5fa6e5fa4dc4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74d15c7ddcd0>]}
+[0m03:27:25.009220 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m03:27:25.010645 [info ] [MainThread]: 
+[0m03:27:25.015676 [debug] [Thread-1 (]: Began running node model.mdtt_dbt.dim_account
+[0m03:27:25.016939 [info ] [Thread-1 (]: 1 of 4 START sql view model modeo_tt.dim_account ............................... [RUN]
+[0m03:27:25.018558 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_able-rarity-417913_modeo_tt, now model.mdtt_dbt.dim_account)
+[0m03:27:25.019558 [debug] [Thread-1 (]: Began compiling node model.mdtt_dbt.dim_account
+[0m03:27:25.030822 [debug] [Thread-1 (]: Writing injected SQL for node "model.mdtt_dbt.dim_account"
+[0m03:27:25.032261 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.dim_account (compile): 03:27:25.020162 => 03:27:25.031796
+[0m03:27:25.033112 [debug] [Thread-1 (]: Began executing node model.mdtt_dbt.dim_account
+[0m03:27:25.086265 [debug] [Thread-1 (]: Writing runtime sql for node "model.mdtt_dbt.dim_account"
+[0m03:27:25.087516 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:27:25.136869 [debug] [Thread-1 (]: On model.mdtt_dbt.dim_account: /* {"app": "dbt", "dbt_version": "1.7.10", "profile_name": "mdtt_dbt", "target_name": "dev", "node_id": "model.mdtt_dbt.dim_account"} */
+
+
+  create or replace view `able-rarity-417913`.`modeo_tt`.`dim_account`
+  OPTIONS()
+  as WITH account_cte AS (
+	SELECT DISTINCT
+	    kindred_id as account_id
+	FROM `able-rarity-417913`.`modeo_tt`.`raw_matches`
+	WHERE CustomerID IS NOT NULL
+)
+SELECT
+    t.*,
+	cm.iso
+FROM account_cte t;
+
+
+[0m03:27:25.792324 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=able-rarity-417913&j=bq:US:ea2f27b1-7713-4eaf-b45a-39c908ed145d&page=queryresults
+[0m03:27:26.202432 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Unrecognized name: CustomerID at [10:15]; reason: invalidQuery, location: query, message: Unrecognized name: CustomerID at [10:15]')
+[0m03:27:27.233956 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=able-rarity-417913&j=bq:US:59c3c9ab-fb0e-4d21-9b56-5dad34e91d1e&page=queryresults
+[0m03:27:27.643382 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=able-rarity-417913&j=bq:US:59c3c9ab-fb0e-4d21-9b56-5dad34e91d1e&page=queryresults
+[0m03:27:27.645388 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.dim_account (execute): 03:27:25.033552 => 03:27:27.644722
+[0m03:27:27.721356 [debug] [Thread-1 (]: Database Error in model dim_account (models/transform/dim_account.sql)
+  Unrecognized name: CustomerID at [10:15]
+  compiled Code at target/run/mdtt_dbt/models/transform/dim_account.sql
+[0m03:27:27.722248 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '624063ab-c355-459a-83c5-5fa6e5fa4dc4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74d15c4e1c50>]}
+[0m03:27:27.723400 [error] [Thread-1 (]: 1 of 4 ERROR creating sql view model modeo_tt.dim_account ...................... [[31mERROR[0m in 2.70s]
+[0m03:27:27.725845 [debug] [Thread-1 (]: Finished running node model.mdtt_dbt.dim_account
+[0m03:27:27.726794 [debug] [Thread-1 (]: Began running node model.mdtt_dbt.dim_etltime
+[0m03:27:27.727801 [info ] [Thread-1 (]: 2 of 4 START sql view model modeo_tt.dim_etltime ............................... [RUN]
+[0m03:27:27.729120 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.mdtt_dbt.dim_account, now model.mdtt_dbt.dim_etltime)
+[0m03:27:27.729812 [debug] [Thread-1 (]: Began compiling node model.mdtt_dbt.dim_etltime
+[0m03:27:27.737302 [debug] [Thread-1 (]: Writing injected SQL for node "model.mdtt_dbt.dim_etltime"
+[0m03:27:27.738466 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.dim_etltime (compile): 03:27:27.730194 => 03:27:27.738087
+[0m03:27:27.739180 [debug] [Thread-1 (]: Began executing node model.mdtt_dbt.dim_etltime
+[0m03:27:27.747047 [debug] [Thread-1 (]: Writing runtime sql for node "model.mdtt_dbt.dim_etltime"
+[0m03:27:27.748674 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:27:27.815196 [debug] [Thread-1 (]: On model.mdtt_dbt.dim_etltime: /* {"app": "dbt", "dbt_version": "1.7.10", "profile_name": "mdtt_dbt", "target_name": "dev", "node_id": "model.mdtt_dbt.dim_etltime"} */
+
+
+  create or replace view `able-rarity-417913`.`modeo_tt`.`dim_etltime`
+  OPTIONS()
+  as WITH datetime_cte AS (  
+  SELECT DISTINCT
+    etl_time AS datetime_id,
+    etl_time AS date_part,
+  FROM `able-rarity-417913`.`modeo_tt`.`raw_matches`
+)
+SELECT
+  datetime_id,
+  date_part as datetime,
+  EXTRACT(YEAR FROM date_part) AS year,
+  EXTRACT(MONTH FROM date_part) AS month,
+  EXTRACT(DAY FROM date_part) AS day,
+  EXTRACT(HOUR FROM date_part) AS hour,
+  EXTRACT(MINUTE FROM date_part) AS minute,
+FROM datetime_cte;
+
+
+[0m03:27:28.394787 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=able-rarity-417913&j=bq:US:4ff8da9f-95d6-4def-a426-55fdf66a843a&page=queryresults
+[0m03:27:28.846456 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.dim_etltime (execute): 03:27:27.739903 => 03:27:28.846119
+[0m03:27:28.847598 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '624063ab-c355-459a-83c5-5fa6e5fa4dc4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74d15c3da990>]}
+[0m03:27:28.848522 [info ] [Thread-1 (]: 2 of 4 OK created sql view model modeo_tt.dim_etltime .......................... [[32mCREATE VIEW (0 processed)[0m in 1.12s]
+[0m03:27:28.849755 [debug] [Thread-1 (]: Finished running node model.mdtt_dbt.dim_etltime
+[0m03:27:28.850582 [debug] [Thread-1 (]: Began running node model.mdtt_dbt.dim_match
+[0m03:27:28.851443 [info ] [Thread-1 (]: 3 of 4 START sql view model modeo_tt.dim_match ................................. [RUN]
+[0m03:27:28.852678 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.mdtt_dbt.dim_etltime, now model.mdtt_dbt.dim_match)
+[0m03:27:28.853331 [debug] [Thread-1 (]: Began compiling node model.mdtt_dbt.dim_match
+[0m03:27:28.883900 [debug] [Thread-1 (]: Writing injected SQL for node "model.mdtt_dbt.dim_match"
+[0m03:27:28.885855 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.dim_match (compile): 03:27:28.853725 => 03:27:28.885088
+[0m03:27:28.887199 [debug] [Thread-1 (]: Began executing node model.mdtt_dbt.dim_match
+[0m03:27:28.895169 [debug] [Thread-1 (]: Writing runtime sql for node "model.mdtt_dbt.dim_match"
+[0m03:27:28.896743 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:27:28.955328 [debug] [Thread-1 (]: On model.mdtt_dbt.dim_match: /* {"app": "dbt", "dbt_version": "1.7.10", "profile_name": "mdtt_dbt", "target_name": "dev", "node_id": "model.mdtt_dbt.dim_match"} */
+
+
+  create or replace view `able-rarity-417913`.`modeo_tt`.`dim_match`
+  OPTIONS()
+  as WITH match_cte AS (
+	SELECT DISTINCT
+        to_hex(md5(cast(coalesce(cast(id as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(has_started as string), '_dbt_utils_surrogate_key_null_') as string))) as match_id,
+		has_started
+	FROM `able-rarity-417913`.`modeo_tt`.`raw_matches`
+)
+SELECT
+    t.*,
+	cm.iso
+FROM customer_cte t;
+
+
+[0m03:27:29.309917 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=able-rarity-417913&j=bq:US:9b2850d7-6985-4d5e-b16d-fbaccdbdff72&page=queryresults
+[0m03:27:29.310758 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Table "customer_cte" must be qualified with a dataset (e.g. dataset.table).; reason: invalid, location: customer_cte, message: Table "customer_cte" must be qualified with a dataset (e.g. dataset.table).')
+[0m03:27:29.823739 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=able-rarity-417913&j=bq:US:6aee3d8a-b4ed-44f9-ad00-74547bd60d42&page=queryresults
+[0m03:27:29.824657 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=able-rarity-417913&j=bq:US:6aee3d8a-b4ed-44f9-ad00-74547bd60d42&page=queryresults
+[0m03:27:29.825712 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.dim_match (execute): 03:27:28.887960 => 03:27:29.825337
+[0m03:27:29.829947 [debug] [Thread-1 (]: Database Error in model dim_match (models/transform/dim_match.sql)
+  Table "customer_cte" must be qualified with a dataset (e.g. dataset.table).
+  compiled Code at target/run/mdtt_dbt/models/transform/dim_match.sql
+[0m03:27:29.830769 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '624063ab-c355-459a-83c5-5fa6e5fa4dc4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74d15c4b10d0>]}
+[0m03:27:29.832103 [error] [Thread-1 (]: 3 of 4 ERROR creating sql view model modeo_tt.dim_match ........................ [[31mERROR[0m in 0.98s]
+[0m03:27:29.833498 [debug] [Thread-1 (]: Finished running node model.mdtt_dbt.dim_match
+[0m03:27:29.834937 [debug] [Thread-1 (]: Began running node model.mdtt_dbt.fact_bet
+[0m03:27:29.835785 [info ] [Thread-1 (]: 4 of 4 SKIP relation modeo_tt.fact_bet ......................................... [[33mSKIP[0m]
+[0m03:27:29.836862 [debug] [Thread-1 (]: Finished running node model.mdtt_dbt.fact_bet
+[0m03:27:29.839524 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m03:27:29.840259 [debug] [MainThread]: Connection 'model.mdtt_dbt.dim_match' was properly closed.
+[0m03:27:29.840933 [info ] [MainThread]: 
+[0m03:27:29.841713 [info ] [MainThread]: Finished running 4 view models in 0 hours 0 minutes and 5.65 seconds (5.65s).
+[0m03:27:29.843489 [debug] [MainThread]: Command end result
+[0m03:27:29.866224 [info ] [MainThread]: 
+[0m03:27:29.867347 [info ] [MainThread]: [31mCompleted with 2 errors and 0 warnings:[0m
+[0m03:27:29.868205 [info ] [MainThread]: 
+[0m03:27:29.869001 [error] [MainThread]:   Database Error in model dim_account (models/transform/dim_account.sql)
+  Unrecognized name: CustomerID at [10:15]
+  compiled Code at target/run/mdtt_dbt/models/transform/dim_account.sql
+[0m03:27:29.869755 [info ] [MainThread]: 
+[0m03:27:29.870596 [error] [MainThread]:   Database Error in model dim_match (models/transform/dim_match.sql)
+  Table "customer_cte" must be qualified with a dataset (e.g. dataset.table).
+  compiled Code at target/run/mdtt_dbt/models/transform/dim_match.sql
+[0m03:27:29.871551 [info ] [MainThread]: 
+[0m03:27:29.872655 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=2 SKIP=1 TOTAL=4
+[0m03:27:29.875203 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 8.928575, "process_user_time": 6.18846, "process_kernel_time": 0.646376, "process_mem_max_rss": "234232", "process_in_blocks": "456", "process_out_blocks": "3536", "command_success": false}
+[0m03:27:29.876375 [debug] [MainThread]: Command `dbt run` failed at 03:27:29.876075 after 8.93 seconds
+[0m03:27:29.877395 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74d170d8af10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74d170d89c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74d17579a750>]}
+[0m03:27:29.878119 [debug] [MainThread]: Flushing usage events
+[0m03:29:42.641638 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x779994809450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x779994972750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x779994809b50>]}
+
+
+============================== 03:29:42.672369 | 2a8754e7-6c91-4de9-a13f-00772479cc63 ==============================
+[0m03:29:42.672369 [info ] [MainThread]: Running with dbt=1.7.10
+[0m03:29:42.673549 [debug] [MainThread]: running dbt with arguments {'log_path': '/usr/local/airflow/include/dbt/logs', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'static_parser': 'True', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'partial_parse': 'True', 'version_check': 'True', 'quiet': 'False', 'target_path': 'None', 'warn_error': 'None', 'debug': 'False', 'no_print': 'None', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'use_colors': 'True', 'log_format': 'default', 'log_cache_events': 'False', 'introspect': 'True'}
+[0m03:29:47.300044 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2a8754e7-6c91-4de9-a13f-00772479cc63', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7799802265d0>]}
+[0m03:29:47.417487 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2a8754e7-6c91-4de9-a13f-00772479cc63', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7799947f8b10>]}
+[0m03:29:47.418442 [info ] [MainThread]: Registered adapter: bigquery=1.7.6
+[0m03:29:47.463300 [debug] [MainThread]: checksum: b88efa780424265bbbd676e971356ada6a7ea9debd0a80a519a6d2707465340d, vars: {}, profile: , target: , version: 1.7.10
+[0m03:29:47.603900 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m03:29:47.604686 [debug] [MainThread]: Partial parsing: updated file: mdtt_dbt://models/transform/dim_match.sql
+[0m03:29:47.771839 [debug] [MainThread]: 1603: static parser failed on transform/dim_match.sql
+[0m03:29:47.814595 [debug] [MainThread]: 1602: parser fallback to jinja rendering on transform/dim_match.sql
+[0m03:29:47.830761 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2a8754e7-6c91-4de9-a13f-00772479cc63', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77997be5d410>]}
+[0m03:29:47.868824 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2a8754e7-6c91-4de9-a13f-00772479cc63', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77997bf4b1d0>]}
+[0m03:29:47.869537 [info ] [MainThread]: Found 4 models, 1 source, 0 exposures, 0 metrics, 568 macros, 0 groups, 0 semantic models
+[0m03:29:47.870184 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2a8754e7-6c91-4de9-a13f-00772479cc63', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7799947e2690>]}
+[0m03:29:47.872345 [info ] [MainThread]: 
+[0m03:29:47.873637 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m03:29:47.875619 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_able-rarity-417913'
+[0m03:29:47.876857 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:29:48.363081 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_able-rarity-417913, now list_able-rarity-417913_modeo_tt)
+[0m03:29:48.363881 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m03:29:48.731363 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2a8754e7-6c91-4de9-a13f-00772479cc63', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77997bedce10>]}
+[0m03:29:48.732620 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m03:29:48.733573 [info ] [MainThread]: 
+[0m03:29:48.758733 [debug] [Thread-1 (]: Began running node model.mdtt_dbt.dim_account
+[0m03:29:48.760817 [info ] [Thread-1 (]: 1 of 4 START sql view model modeo_tt.dim_account ............................... [RUN]
+[0m03:29:48.762415 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_able-rarity-417913_modeo_tt, now model.mdtt_dbt.dim_account)
+[0m03:29:48.763088 [debug] [Thread-1 (]: Began compiling node model.mdtt_dbt.dim_account
+[0m03:29:48.774743 [debug] [Thread-1 (]: Writing injected SQL for node "model.mdtt_dbt.dim_account"
+[0m03:29:48.776271 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.dim_account (compile): 03:29:48.763490 => 03:29:48.775546
+[0m03:29:48.777013 [debug] [Thread-1 (]: Began executing node model.mdtt_dbt.dim_account
+[0m03:29:48.829999 [debug] [Thread-1 (]: Writing runtime sql for node "model.mdtt_dbt.dim_account"
+[0m03:29:48.830949 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:29:48.877488 [debug] [Thread-1 (]: On model.mdtt_dbt.dim_account: /* {"app": "dbt", "dbt_version": "1.7.10", "profile_name": "mdtt_dbt", "target_name": "dev", "node_id": "model.mdtt_dbt.dim_account"} */
+
+
+  create or replace view `able-rarity-417913`.`modeo_tt`.`dim_account`
+  OPTIONS()
+  as WITH account_cte AS (
+	SELECT DISTINCT
+	    kindred_id as account_id
+	FROM `able-rarity-417913`.`modeo_tt`.`raw_matches`
+	WHERE CustomerID IS NOT NULL
+)
+SELECT
+    t.*,
+	cm.iso
+FROM account_cte t;
+
+
+[0m03:29:49.558392 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=able-rarity-417913&j=bq:US:be6a3243-df92-44bb-83da-1d4193cc0de9&page=queryresults
+[0m03:29:49.997232 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Unrecognized name: CustomerID at [10:15]; reason: invalidQuery, location: query, message: Unrecognized name: CustomerID at [10:15]')
+[0m03:29:50.631268 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=able-rarity-417913&j=bq:US:9ab17725-262d-4a17-a124-88f9fe8cc3c6&page=queryresults
+[0m03:29:51.016470 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=able-rarity-417913&j=bq:US:9ab17725-262d-4a17-a124-88f9fe8cc3c6&page=queryresults
+[0m03:29:51.017707 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.dim_account (execute): 03:29:48.777407 => 03:29:51.017325
+[0m03:29:51.096919 [debug] [Thread-1 (]: Database Error in model dim_account (models/transform/dim_account.sql)
+  Unrecognized name: CustomerID at [10:15]
+  compiled Code at target/run/mdtt_dbt/models/transform/dim_account.sql
+[0m03:29:51.098152 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2a8754e7-6c91-4de9-a13f-00772479cc63', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7799831d1650>]}
+[0m03:29:51.099620 [error] [Thread-1 (]: 1 of 4 ERROR creating sql view model modeo_tt.dim_account ...................... [[31mERROR[0m in 2.34s]
+[0m03:29:51.101372 [debug] [Thread-1 (]: Finished running node model.mdtt_dbt.dim_account
+[0m03:29:51.102608 [debug] [Thread-1 (]: Began running node model.mdtt_dbt.dim_etltime
+[0m03:29:51.103997 [info ] [Thread-1 (]: 2 of 4 START sql view model modeo_tt.dim_etltime ............................... [RUN]
+[0m03:29:51.106005 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.mdtt_dbt.dim_account, now model.mdtt_dbt.dim_etltime)
+[0m03:29:51.107146 [debug] [Thread-1 (]: Began compiling node model.mdtt_dbt.dim_etltime
+[0m03:29:51.114688 [debug] [Thread-1 (]: Writing injected SQL for node "model.mdtt_dbt.dim_etltime"
+[0m03:29:51.116337 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.dim_etltime (compile): 03:29:51.108046 => 03:29:51.115662
+[0m03:29:51.117424 [debug] [Thread-1 (]: Began executing node model.mdtt_dbt.dim_etltime
+[0m03:29:51.125504 [debug] [Thread-1 (]: Writing runtime sql for node "model.mdtt_dbt.dim_etltime"
+[0m03:29:51.127103 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:29:51.214289 [debug] [Thread-1 (]: On model.mdtt_dbt.dim_etltime: /* {"app": "dbt", "dbt_version": "1.7.10", "profile_name": "mdtt_dbt", "target_name": "dev", "node_id": "model.mdtt_dbt.dim_etltime"} */
+
+
+  create or replace view `able-rarity-417913`.`modeo_tt`.`dim_etltime`
+  OPTIONS()
+  as WITH datetime_cte AS (  
+  SELECT DISTINCT
+    etl_time AS datetime_id,
+    etl_time AS date_part,
+  FROM `able-rarity-417913`.`modeo_tt`.`raw_matches`
+)
+SELECT
+  datetime_id,
+  date_part as datetime,
+  EXTRACT(YEAR FROM date_part) AS year,
+  EXTRACT(MONTH FROM date_part) AS month,
+  EXTRACT(DAY FROM date_part) AS day,
+  EXTRACT(HOUR FROM date_part) AS hour,
+  EXTRACT(MINUTE FROM date_part) AS minute,
+FROM datetime_cte;
+
+
+[0m03:29:51.828549 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=able-rarity-417913&j=bq:US:33bae8cf-649d-420e-b3af-9931b8e78f42&page=queryresults
+[0m03:29:52.273541 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.dim_etltime (execute): 03:29:51.118087 => 03:29:52.273231
+[0m03:29:52.274778 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2a8754e7-6c91-4de9-a13f-00772479cc63', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77997bcaa6d0>]}
+[0m03:29:52.275969 [info ] [Thread-1 (]: 2 of 4 OK created sql view model modeo_tt.dim_etltime .......................... [[32mCREATE VIEW (0 processed)[0m in 1.17s]
+[0m03:29:52.277519 [debug] [Thread-1 (]: Finished running node model.mdtt_dbt.dim_etltime
+[0m03:29:52.278514 [debug] [Thread-1 (]: Began running node model.mdtt_dbt.dim_match
+[0m03:29:52.279877 [info ] [Thread-1 (]: 3 of 4 START sql view model modeo_tt.dim_match ................................. [RUN]
+[0m03:29:52.282403 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.mdtt_dbt.dim_etltime, now model.mdtt_dbt.dim_match)
+[0m03:29:52.284330 [debug] [Thread-1 (]: Began compiling node model.mdtt_dbt.dim_match
+[0m03:29:52.317998 [debug] [Thread-1 (]: Writing injected SQL for node "model.mdtt_dbt.dim_match"
+[0m03:29:52.319623 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.dim_match (compile): 03:29:52.285360 => 03:29:52.318947
+[0m03:29:52.320824 [debug] [Thread-1 (]: Began executing node model.mdtt_dbt.dim_match
+[0m03:29:52.328280 [debug] [Thread-1 (]: Writing runtime sql for node "model.mdtt_dbt.dim_match"
+[0m03:29:52.329223 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:29:52.377110 [debug] [Thread-1 (]: On model.mdtt_dbt.dim_match: /* {"app": "dbt", "dbt_version": "1.7.10", "profile_name": "mdtt_dbt", "target_name": "dev", "node_id": "model.mdtt_dbt.dim_match"} */
+
+
+  create or replace view `able-rarity-417913`.`modeo_tt`.`dim_match`
+  OPTIONS()
+  as WITH match_cte AS (
+	SELECT DISTINCT
+        to_hex(md5(cast(coalesce(cast(id as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(has_started as string), '_dbt_utils_surrogate_key_null_') as string))) as match_id,
+		has_started
+	FROM `able-rarity-417913`.`modeo_tt`.`raw_matches`
+)
+SELECT
+    t.*,
+	cm.iso
+FROM match_cte t;
+
+
+[0m03:29:52.949273 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=able-rarity-417913&j=bq:US:2265ca0d-71a2-4f94-a959-fca6ce2ee44d&page=queryresults
+[0m03:29:53.346050 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Unrecognized name: cm at [14:9]; reason: invalidQuery, location: query, message: Unrecognized name: cm at [14:9]')
+[0m03:29:54.153631 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=able-rarity-417913&j=bq:US:f1b76e17-afd6-46eb-b03c-4d5abb2aa0a6&page=queryresults
+[0m03:29:54.545615 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=able-rarity-417913&j=bq:US:f1b76e17-afd6-46eb-b03c-4d5abb2aa0a6&page=queryresults
+[0m03:29:54.548742 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.dim_match (execute): 03:29:52.321961 => 03:29:54.547519
+[0m03:29:54.556593 [debug] [Thread-1 (]: Database Error in model dim_match (models/transform/dim_match.sql)
+  Unrecognized name: cm at [14:9]
+  compiled Code at target/run/mdtt_dbt/models/transform/dim_match.sql
+[0m03:29:54.557343 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2a8754e7-6c91-4de9-a13f-00772479cc63', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77997bf87710>]}
+[0m03:29:54.558177 [error] [Thread-1 (]: 3 of 4 ERROR creating sql view model modeo_tt.dim_match ........................ [[31mERROR[0m in 2.28s]
+[0m03:29:54.559398 [debug] [Thread-1 (]: Finished running node model.mdtt_dbt.dim_match
+[0m03:29:54.560758 [debug] [Thread-1 (]: Began running node model.mdtt_dbt.fact_bet
+[0m03:29:54.561484 [info ] [Thread-1 (]: 4 of 4 SKIP relation modeo_tt.fact_bet ......................................... [[33mSKIP[0m]
+[0m03:29:54.562365 [debug] [Thread-1 (]: Finished running node model.mdtt_dbt.fact_bet
+[0m03:29:54.565098 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m03:29:54.565774 [debug] [MainThread]: Connection 'model.mdtt_dbt.dim_match' was properly closed.
+[0m03:29:54.567790 [info ] [MainThread]: 
+[0m03:29:54.569392 [info ] [MainThread]: Finished running 4 view models in 0 hours 0 minutes and 6.69 seconds (6.69s).
+[0m03:29:54.573020 [debug] [MainThread]: Command end result
+[0m03:29:54.599695 [info ] [MainThread]: 
+[0m03:29:54.601191 [info ] [MainThread]: [31mCompleted with 2 errors and 0 warnings:[0m
+[0m03:29:54.602452 [info ] [MainThread]: 
+[0m03:29:54.603635 [error] [MainThread]:   Database Error in model dim_account (models/transform/dim_account.sql)
+  Unrecognized name: CustomerID at [10:15]
+  compiled Code at target/run/mdtt_dbt/models/transform/dim_account.sql
+[0m03:29:54.604750 [info ] [MainThread]: 
+[0m03:29:54.605559 [error] [MainThread]:   Database Error in model dim_match (models/transform/dim_match.sql)
+  Unrecognized name: cm at [14:9]
+  compiled Code at target/run/mdtt_dbt/models/transform/dim_match.sql
+[0m03:29:54.606400 [info ] [MainThread]: 
+[0m03:29:54.607628 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=2 SKIP=1 TOTAL=4
+[0m03:29:54.609733 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 12.116265, "process_user_time": 5.483464, "process_kernel_time": 0.842074, "process_mem_max_rss": "233572", "process_in_blocks": "81624", "process_out_blocks": "3536", "command_success": false}
+[0m03:29:54.611801 [debug] [MainThread]: Command `dbt run` failed at 03:29:54.611323 after 12.12 seconds
+[0m03:29:54.612991 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7799947bad10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7799947b9650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x779999310d90>]}
+[0m03:29:54.614272 [debug] [MainThread]: Flushing usage events
+[0m03:31:42.320301 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77a03df80bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77a03e246610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77a03df71010>]}
+
+
+============================== 03:31:42.353017 | 861c1bec-90bc-4973-9b15-e90502a992f3 ==============================
+[0m03:31:42.353017 [info ] [MainThread]: Running with dbt=1.7.10
+[0m03:31:42.354055 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'log_path': '/usr/local/airflow/include/dbt/logs', 'printer_width': '80', 'log_cache_events': 'False', 'fail_fast': 'False', 'introspect': 'True', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'version_check': 'True', 'partial_parse': 'True', 'quiet': 'False', 'indirect_selection': 'eager', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'no_print': 'None', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'debug': 'False', 'write_json': 'True', 'cache_selected_only': 'False'}
+[0m03:31:47.255584 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '861c1bec-90bc-4973-9b15-e90502a992f3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77a02c7ec210>]}
+[0m03:31:47.409144 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '861c1bec-90bc-4973-9b15-e90502a992f3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77a03dfa4dd0>]}
+[0m03:31:47.410751 [info ] [MainThread]: Registered adapter: bigquery=1.7.6
+[0m03:31:47.436013 [debug] [MainThread]: checksum: b88efa780424265bbbd676e971356ada6a7ea9debd0a80a519a6d2707465340d, vars: {}, profile: , target: , version: 1.7.10
+[0m03:31:47.503817 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 2 files changed.
+[0m03:31:47.504619 [debug] [MainThread]: Partial parsing: updated file: mdtt_dbt://models/transform/dim_match.sql
+[0m03:31:47.505215 [debug] [MainThread]: Partial parsing: updated file: mdtt_dbt://models/transform/dim_account.sql
+[0m03:31:47.657863 [debug] [MainThread]: 1603: static parser failed on transform/dim_match.sql
+[0m03:31:47.703306 [debug] [MainThread]: 1602: parser fallback to jinja rendering on transform/dim_match.sql
+[0m03:31:47.705961 [debug] [MainThread]: 1699: static parser successfully parsed transform/dim_account.sql
+[0m03:31:47.723206 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '861c1bec-90bc-4973-9b15-e90502a992f3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77a0258f1090>]}
+[0m03:31:47.743892 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '861c1bec-90bc-4973-9b15-e90502a992f3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77a02587f150>]}
+[0m03:31:47.744674 [info ] [MainThread]: Found 4 models, 1 source, 0 exposures, 0 metrics, 568 macros, 0 groups, 0 semantic models
+[0m03:31:47.745428 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '861c1bec-90bc-4973-9b15-e90502a992f3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77a0257b1c50>]}
+[0m03:31:47.747693 [info ] [MainThread]: 
+[0m03:31:47.749087 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m03:31:47.751007 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_able-rarity-417913'
+[0m03:31:47.752126 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:31:48.196034 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_able-rarity-417913, now list_able-rarity-417913_modeo_tt)
+[0m03:31:48.197196 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m03:31:48.594912 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '861c1bec-90bc-4973-9b15-e90502a992f3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77a025606ed0>]}
+[0m03:31:48.596033 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m03:31:48.596733 [info ] [MainThread]: 
+[0m03:31:48.603218 [debug] [Thread-1 (]: Began running node model.mdtt_dbt.dim_account
+[0m03:31:48.604271 [info ] [Thread-1 (]: 1 of 4 START sql view model modeo_tt.dim_account ............................... [RUN]
+[0m03:31:48.605615 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_able-rarity-417913_modeo_tt, now model.mdtt_dbt.dim_account)
+[0m03:31:48.606326 [debug] [Thread-1 (]: Began compiling node model.mdtt_dbt.dim_account
+[0m03:31:48.618052 [debug] [Thread-1 (]: Writing injected SQL for node "model.mdtt_dbt.dim_account"
+[0m03:31:48.619328 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.dim_account (compile): 03:31:48.606764 => 03:31:48.618870
+[0m03:31:48.620119 [debug] [Thread-1 (]: Began executing node model.mdtt_dbt.dim_account
+[0m03:31:48.682060 [debug] [Thread-1 (]: Writing runtime sql for node "model.mdtt_dbt.dim_account"
+[0m03:31:48.683136 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:31:48.729222 [debug] [Thread-1 (]: On model.mdtt_dbt.dim_account: /* {"app": "dbt", "dbt_version": "1.7.10", "profile_name": "mdtt_dbt", "target_name": "dev", "node_id": "model.mdtt_dbt.dim_account"} */
+
+
+  create or replace view `able-rarity-417913`.`modeo_tt`.`dim_account`
+  OPTIONS()
+  as WITH account_cte AS (
+	SELECT DISTINCT
+	    kindred_id as account_id
+	FROM `able-rarity-417913`.`modeo_tt`.`raw_matches`
+	WHERE CustomerID IS NOT NULL
+)
+SELECT
+    t.*
+FROM account_cte t;
+
+
+[0m03:31:49.470715 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=able-rarity-417913&j=bq:US:ce4a7ab8-96c2-418e-83f2-a600bc5af2cf&page=queryresults
+[0m03:31:49.893237 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Unrecognized name: CustomerID at [10:15]; reason: invalidQuery, location: query, message: Unrecognized name: CustomerID at [10:15]')
+[0m03:31:50.664313 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=able-rarity-417913&j=bq:US:084cef78-479b-4554-875e-c494ae479b62&page=queryresults
+[0m03:31:51.053495 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=able-rarity-417913&j=bq:US:084cef78-479b-4554-875e-c494ae479b62&page=queryresults
+[0m03:31:51.054694 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.dim_account (execute): 03:31:48.620525 => 03:31:51.054309
+[0m03:31:51.115467 [debug] [Thread-1 (]: Database Error in model dim_account (models/transform/dim_account.sql)
+  Unrecognized name: CustomerID at [10:15]
+  compiled Code at target/run/mdtt_dbt/models/transform/dim_account.sql
+[0m03:31:51.116662 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '861c1bec-90bc-4973-9b15-e90502a992f3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77a0254c5410>]}
+[0m03:31:51.117995 [error] [Thread-1 (]: 1 of 4 ERROR creating sql view model modeo_tt.dim_account ...................... [[31mERROR[0m in 2.51s]
+[0m03:31:51.119670 [debug] [Thread-1 (]: Finished running node model.mdtt_dbt.dim_account
+[0m03:31:51.120865 [debug] [Thread-1 (]: Began running node model.mdtt_dbt.dim_etltime
+[0m03:31:51.122104 [info ] [Thread-1 (]: 2 of 4 START sql view model modeo_tt.dim_etltime ............................... [RUN]
+[0m03:31:51.123891 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.mdtt_dbt.dim_account, now model.mdtt_dbt.dim_etltime)
+[0m03:31:51.125131 [debug] [Thread-1 (]: Began compiling node model.mdtt_dbt.dim_etltime
+[0m03:31:51.132832 [debug] [Thread-1 (]: Writing injected SQL for node "model.mdtt_dbt.dim_etltime"
+[0m03:31:51.134531 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.dim_etltime (compile): 03:31:51.125947 => 03:31:51.133856
+[0m03:31:51.135587 [debug] [Thread-1 (]: Began executing node model.mdtt_dbt.dim_etltime
+[0m03:31:51.143700 [debug] [Thread-1 (]: Writing runtime sql for node "model.mdtt_dbt.dim_etltime"
+[0m03:31:51.145411 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:31:51.206103 [debug] [Thread-1 (]: On model.mdtt_dbt.dim_etltime: /* {"app": "dbt", "dbt_version": "1.7.10", "profile_name": "mdtt_dbt", "target_name": "dev", "node_id": "model.mdtt_dbt.dim_etltime"} */
+
+
+  create or replace view `able-rarity-417913`.`modeo_tt`.`dim_etltime`
+  OPTIONS()
+  as WITH datetime_cte AS (  
+  SELECT DISTINCT
+    etl_time AS datetime_id,
+    etl_time AS date_part,
+  FROM `able-rarity-417913`.`modeo_tt`.`raw_matches`
+)
+SELECT
+  datetime_id,
+  date_part as datetime,
+  EXTRACT(YEAR FROM date_part) AS year,
+  EXTRACT(MONTH FROM date_part) AS month,
+  EXTRACT(DAY FROM date_part) AS day,
+  EXTRACT(HOUR FROM date_part) AS hour,
+  EXTRACT(MINUTE FROM date_part) AS minute,
+FROM datetime_cte;
+
+
+[0m03:31:51.728856 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=able-rarity-417913&j=bq:US:5e0ab47c-1c94-49d4-ae31-843881fab5de&page=queryresults
+[0m03:31:52.206256 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.dim_etltime (execute): 03:31:51.136237 => 03:31:52.205943
+[0m03:31:52.207362 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '861c1bec-90bc-4973-9b15-e90502a992f3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77a025793890>]}
+[0m03:31:52.208573 [info ] [Thread-1 (]: 2 of 4 OK created sql view model modeo_tt.dim_etltime .......................... [[32mCREATE VIEW (0 processed)[0m in 1.08s]
+[0m03:31:52.209800 [debug] [Thread-1 (]: Finished running node model.mdtt_dbt.dim_etltime
+[0m03:31:52.210590 [debug] [Thread-1 (]: Began running node model.mdtt_dbt.dim_match
+[0m03:31:52.211387 [info ] [Thread-1 (]: 3 of 4 START sql view model modeo_tt.dim_match ................................. [RUN]
+[0m03:31:52.212536 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.mdtt_dbt.dim_etltime, now model.mdtt_dbt.dim_match)
+[0m03:31:52.213190 [debug] [Thread-1 (]: Began compiling node model.mdtt_dbt.dim_match
+[0m03:31:52.238716 [debug] [Thread-1 (]: Writing injected SQL for node "model.mdtt_dbt.dim_match"
+[0m03:31:52.240431 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.dim_match (compile): 03:31:52.213568 => 03:31:52.239738
+[0m03:31:52.241418 [debug] [Thread-1 (]: Began executing node model.mdtt_dbt.dim_match
+[0m03:31:52.254255 [debug] [Thread-1 (]: Writing runtime sql for node "model.mdtt_dbt.dim_match"
+[0m03:31:52.255294 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:31:52.302869 [debug] [Thread-1 (]: On model.mdtt_dbt.dim_match: /* {"app": "dbt", "dbt_version": "1.7.10", "profile_name": "mdtt_dbt", "target_name": "dev", "node_id": "model.mdtt_dbt.dim_match"} */
+
+
+  create or replace view `able-rarity-417913`.`modeo_tt`.`dim_match`
+  OPTIONS()
+  as WITH match_cte AS (
+	SELECT DISTINCT
+        to_hex(md5(cast(coalesce(cast(id as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(has_started as string), '_dbt_utils_surrogate_key_null_') as string))) as match_id,
+		has_started
+	FROM `able-rarity-417913`.`modeo_tt`.`raw_matches`
+)
+SELECT
+    t.*
+FROM match_cte t;
+
+
+[0m03:31:52.903900 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=able-rarity-417913&j=bq:US:0a3427a1-5b63-4395-a4ad-6897ca4ffb53&page=queryresults
+[0m03:31:53.375623 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.dim_match (execute): 03:31:52.241993 => 03:31:53.375323
+[0m03:31:53.376705 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '861c1bec-90bc-4973-9b15-e90502a992f3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77a0257d2290>]}
+[0m03:31:53.377491 [info ] [Thread-1 (]: 3 of 4 OK created sql view model modeo_tt.dim_match ............................ [[32mCREATE VIEW (0 processed)[0m in 1.16s]
+[0m03:31:53.378616 [debug] [Thread-1 (]: Finished running node model.mdtt_dbt.dim_match
+[0m03:31:53.380586 [debug] [Thread-1 (]: Began running node model.mdtt_dbt.fact_bet
+[0m03:31:53.381410 [info ] [Thread-1 (]: 4 of 4 SKIP relation modeo_tt.fact_bet ......................................... [[33mSKIP[0m]
+[0m03:31:53.382270 [debug] [Thread-1 (]: Finished running node model.mdtt_dbt.fact_bet
+[0m03:31:53.384743 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m03:31:53.385477 [debug] [MainThread]: Connection 'model.mdtt_dbt.dim_match' was properly closed.
+[0m03:31:53.386054 [info ] [MainThread]: 
+[0m03:31:53.386726 [info ] [MainThread]: Finished running 4 view models in 0 hours 0 minutes and 5.64 seconds (5.64s).
+[0m03:31:53.388434 [debug] [MainThread]: Command end result
+[0m03:31:53.403703 [info ] [MainThread]: 
+[0m03:31:53.404519 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m03:31:53.405224 [info ] [MainThread]: 
+[0m03:31:53.406277 [error] [MainThread]:   Database Error in model dim_account (models/transform/dim_account.sql)
+  Unrecognized name: CustomerID at [10:15]
+  compiled Code at target/run/mdtt_dbt/models/transform/dim_account.sql
+[0m03:31:53.406991 [info ] [MainThread]: 
+[0m03:31:53.407806 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=1 TOTAL=4
+[0m03:31:53.411282 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 11.163853, "process_user_time": 5.405628, "process_kernel_time": 0.771091, "process_mem_max_rss": "231804", "process_in_blocks": "31216", "process_out_blocks": "3536", "command_success": false}
+[0m03:31:53.413136 [debug] [MainThread]: Command `dbt run` failed at 03:31:53.412600 after 11.17 seconds
+[0m03:31:53.414690 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77a03dfb6450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77a03df66e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77a024b5fe50>]}
+[0m03:31:53.416110 [debug] [MainThread]: Flushing usage events
+[0m03:33:09.066831 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x763262b68d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x763262b9b650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x763262b6a210>]}
+
+
+============================== 03:33:09.069326 | 833b6cfd-694a-4da2-8761-978bcfb39381 ==============================
+[0m03:33:09.069326 [info ] [MainThread]: Running with dbt=1.7.10
+[0m03:33:09.070405 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'warn_error': 'None', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'printer_width': '80', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_cache_events': 'False', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'indirect_selection': 'eager', 'static_parser': 'True', 'use_colors': 'True', 'log_path': '/usr/local/airflow/include/dbt/logs', 'write_json': 'True', 'log_format': 'default', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'debug': 'False', 'partial_parse': 'True', 'target_path': 'None', 'version_check': 'True'}
+[0m03:33:10.508983 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '833b6cfd-694a-4da2-8761-978bcfb39381', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x763262b56d10>]}
+[0m03:33:10.638920 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '833b6cfd-694a-4da2-8761-978bcfb39381', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76324a5aab90>]}
+[0m03:33:10.639975 [info ] [MainThread]: Registered adapter: bigquery=1.7.6
+[0m03:33:10.658999 [debug] [MainThread]: checksum: b88efa780424265bbbd676e971356ada6a7ea9debd0a80a519a6d2707465340d, vars: {}, profile: , target: , version: 1.7.10
+[0m03:33:10.716157 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m03:33:10.717007 [debug] [MainThread]: Partial parsing: updated file: mdtt_dbt://models/transform/dim_account.sql
+[0m03:33:10.853573 [debug] [MainThread]: 1699: static parser successfully parsed transform/dim_account.sql
+[0m03:33:10.886806 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '833b6cfd-694a-4da2-8761-978bcfb39381', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76324a363090>]}
+[0m03:33:10.905524 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '833b6cfd-694a-4da2-8761-978bcfb39381', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76324a2fd410>]}
+[0m03:33:10.906215 [info ] [MainThread]: Found 4 models, 1 source, 0 exposures, 0 metrics, 568 macros, 0 groups, 0 semantic models
+[0m03:33:10.906825 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '833b6cfd-694a-4da2-8761-978bcfb39381', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76324a060fd0>]}
+[0m03:33:10.909525 [info ] [MainThread]: 
+[0m03:33:10.910832 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m03:33:10.912881 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_able-rarity-417913'
+[0m03:33:10.914126 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:33:11.323373 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_able-rarity-417913, now list_able-rarity-417913_modeo_tt)
+[0m03:33:11.324325 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m03:33:11.719629 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '833b6cfd-694a-4da2-8761-978bcfb39381', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76324a4105d0>]}
+[0m03:33:11.721350 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m03:33:11.722381 [info ] [MainThread]: 
+[0m03:33:11.729265 [debug] [Thread-1 (]: Began running node model.mdtt_dbt.dim_account
+[0m03:33:11.730367 [info ] [Thread-1 (]: 1 of 4 START sql view model modeo_tt.dim_account ............................... [RUN]
+[0m03:33:11.731680 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_able-rarity-417913_modeo_tt, now model.mdtt_dbt.dim_account)
+[0m03:33:11.732398 [debug] [Thread-1 (]: Began compiling node model.mdtt_dbt.dim_account
+[0m03:33:11.744782 [debug] [Thread-1 (]: Writing injected SQL for node "model.mdtt_dbt.dim_account"
+[0m03:33:11.745880 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.dim_account (compile): 03:33:11.732854 => 03:33:11.745474
+[0m03:33:11.746528 [debug] [Thread-1 (]: Began executing node model.mdtt_dbt.dim_account
+[0m03:33:11.798036 [debug] [Thread-1 (]: Writing runtime sql for node "model.mdtt_dbt.dim_account"
+[0m03:33:11.798974 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:33:11.844810 [debug] [Thread-1 (]: On model.mdtt_dbt.dim_account: /* {"app": "dbt", "dbt_version": "1.7.10", "profile_name": "mdtt_dbt", "target_name": "dev", "node_id": "model.mdtt_dbt.dim_account"} */
+
+
+  create or replace view `able-rarity-417913`.`modeo_tt`.`dim_account`
+  OPTIONS()
+  as WITH account_cte AS (
+	SELECT DISTINCT
+	    kindred_id as account_id
+	FROM `able-rarity-417913`.`modeo_tt`.`raw_matches`
+)
+SELECT
+    t.*
+FROM account_cte t;
+
+
+[0m03:33:12.414170 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=able-rarity-417913&j=bq:US:6c39402d-1025-42a5-9864-c045b431ebf1&page=queryresults
+[0m03:33:12.904004 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.dim_account (execute): 03:33:11.746906 => 03:33:12.903645
+[0m03:33:12.905113 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '833b6cfd-694a-4da2-8761-978bcfb39381', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76324a362890>]}
+[0m03:33:12.905961 [info ] [Thread-1 (]: 1 of 4 OK created sql view model modeo_tt.dim_account .......................... [[32mCREATE VIEW (0 processed)[0m in 1.17s]
+[0m03:33:12.907715 [debug] [Thread-1 (]: Finished running node model.mdtt_dbt.dim_account
+[0m03:33:12.909341 [debug] [Thread-1 (]: Began running node model.mdtt_dbt.dim_etltime
+[0m03:33:12.910166 [info ] [Thread-1 (]: 2 of 4 START sql view model modeo_tt.dim_etltime ............................... [RUN]
+[0m03:33:12.911313 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.mdtt_dbt.dim_account, now model.mdtt_dbt.dim_etltime)
+[0m03:33:12.911997 [debug] [Thread-1 (]: Began compiling node model.mdtt_dbt.dim_etltime
+[0m03:33:12.916852 [debug] [Thread-1 (]: Writing injected SQL for node "model.mdtt_dbt.dim_etltime"
+[0m03:33:12.918133 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.dim_etltime (compile): 03:33:12.912614 => 03:33:12.917618
+[0m03:33:12.918801 [debug] [Thread-1 (]: Began executing node model.mdtt_dbt.dim_etltime
+[0m03:33:12.927140 [debug] [Thread-1 (]: Writing runtime sql for node "model.mdtt_dbt.dim_etltime"
+[0m03:33:12.928830 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:33:12.984395 [debug] [Thread-1 (]: On model.mdtt_dbt.dim_etltime: /* {"app": "dbt", "dbt_version": "1.7.10", "profile_name": "mdtt_dbt", "target_name": "dev", "node_id": "model.mdtt_dbt.dim_etltime"} */
+
+
+  create or replace view `able-rarity-417913`.`modeo_tt`.`dim_etltime`
+  OPTIONS()
+  as WITH datetime_cte AS (  
+  SELECT DISTINCT
+    etl_time AS datetime_id,
+    etl_time AS date_part,
+  FROM `able-rarity-417913`.`modeo_tt`.`raw_matches`
+)
+SELECT
+  datetime_id,
+  date_part as datetime,
+  EXTRACT(YEAR FROM date_part) AS year,
+  EXTRACT(MONTH FROM date_part) AS month,
+  EXTRACT(DAY FROM date_part) AS day,
+  EXTRACT(HOUR FROM date_part) AS hour,
+  EXTRACT(MINUTE FROM date_part) AS minute,
+FROM datetime_cte;
+
+
+[0m03:33:13.526535 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=able-rarity-417913&j=bq:US:256b7c50-b21f-421d-90e1-f39e0e793b60&page=queryresults
+[0m03:33:14.064060 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.dim_etltime (execute): 03:33:12.919182 => 03:33:14.063531
+[0m03:33:14.066423 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '833b6cfd-694a-4da2-8761-978bcfb39381', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x763263196550>]}
+[0m03:33:14.068463 [info ] [Thread-1 (]: 2 of 4 OK created sql view model modeo_tt.dim_etltime .......................... [[32mCREATE VIEW (0 processed)[0m in 1.16s]
+[0m03:33:14.070738 [debug] [Thread-1 (]: Finished running node model.mdtt_dbt.dim_etltime
+[0m03:33:14.072229 [debug] [Thread-1 (]: Began running node model.mdtt_dbt.dim_match
+[0m03:33:14.073619 [info ] [Thread-1 (]: 3 of 4 START sql view model modeo_tt.dim_match ................................. [RUN]
+[0m03:33:14.075588 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.mdtt_dbt.dim_etltime, now model.mdtt_dbt.dim_match)
+[0m03:33:14.076903 [debug] [Thread-1 (]: Began compiling node model.mdtt_dbt.dim_match
+[0m03:33:14.107608 [debug] [Thread-1 (]: Writing injected SQL for node "model.mdtt_dbt.dim_match"
+[0m03:33:14.109802 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.dim_match (compile): 03:33:14.077778 => 03:33:14.108943
+[0m03:33:14.110607 [debug] [Thread-1 (]: Began executing node model.mdtt_dbt.dim_match
+[0m03:33:14.139024 [debug] [Thread-1 (]: Writing runtime sql for node "model.mdtt_dbt.dim_match"
+[0m03:33:14.140616 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:33:14.207249 [debug] [Thread-1 (]: On model.mdtt_dbt.dim_match: /* {"app": "dbt", "dbt_version": "1.7.10", "profile_name": "mdtt_dbt", "target_name": "dev", "node_id": "model.mdtt_dbt.dim_match"} */
+
+
+  create or replace view `able-rarity-417913`.`modeo_tt`.`dim_match`
+  OPTIONS()
+  as WITH match_cte AS (
+	SELECT DISTINCT
+        to_hex(md5(cast(coalesce(cast(id as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(has_started as string), '_dbt_utils_surrogate_key_null_') as string))) as match_id,
+		has_started
+	FROM `able-rarity-417913`.`modeo_tt`.`raw_matches`
+)
+SELECT
+    t.*
+FROM match_cte t;
+
+
+[0m03:33:14.865859 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=able-rarity-417913&j=bq:US:ce2c2ec1-aab5-4e2f-bfb3-93d38724b39f&page=queryresults
+[0m03:33:15.272887 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.dim_match (execute): 03:33:14.111013 => 03:33:15.272513
+[0m03:33:15.274141 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '833b6cfd-694a-4da2-8761-978bcfb39381', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76324a138a50>]}
+[0m03:33:15.275117 [info ] [Thread-1 (]: 3 of 4 OK created sql view model modeo_tt.dim_match ............................ [[32mCREATE VIEW (0 processed)[0m in 1.20s]
+[0m03:33:15.276703 [debug] [Thread-1 (]: Finished running node model.mdtt_dbt.dim_match
+[0m03:33:15.278283 [debug] [Thread-1 (]: Began running node model.mdtt_dbt.fact_bet
+[0m03:33:15.279640 [info ] [Thread-1 (]: 4 of 4 START sql view model modeo_tt.fact_bet .................................. [RUN]
+[0m03:33:15.281251 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.mdtt_dbt.dim_match, now model.mdtt_dbt.fact_bet)
+[0m03:33:15.282542 [debug] [Thread-1 (]: Began compiling node model.mdtt_dbt.fact_bet
+[0m03:33:15.302121 [debug] [Thread-1 (]: Writing injected SQL for node "model.mdtt_dbt.fact_bet"
+[0m03:33:15.303441 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.fact_bet (compile): 03:33:15.283375 => 03:33:15.303048
+[0m03:33:15.304171 [debug] [Thread-1 (]: Began executing node model.mdtt_dbt.fact_bet
+[0m03:33:15.311501 [debug] [Thread-1 (]: Writing runtime sql for node "model.mdtt_dbt.fact_bet"
+[0m03:33:15.313857 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:33:15.405010 [debug] [Thread-1 (]: On model.mdtt_dbt.fact_bet: /* {"app": "dbt", "dbt_version": "1.7.10", "profile_name": "mdtt_dbt", "target_name": "dev", "node_id": "model.mdtt_dbt.fact_bet"} */
+
+
+  create or replace view `able-rarity-417913`.`modeo_tt`.`fact_bet`
+  OPTIONS()
+  as WITH fct_bet_cte AS (
+    SELECT
+        id AS bet_id,
+        to_hex(md5(cast(coalesce(cast(id as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(has_started as string), '_dbt_utils_surrogate_key_null_') as string))) as match_id,
+        kindred_id AS account_id,
+        etl_time AS datetime_id,
+        bet_offer_name,
+        home_odd,
+        away_odd,
+    FROM `able-rarity-417913`.`modeo_tt`.`raw_matches`
+)
+SELECT
+    bet_id,
+    dt.datetime_id,
+    dm.match_id,
+    da.account_id,
+    bet_offer_name,
+    home_odd,
+    away_odd
+FROM fct_bet_cte fi
+INNER JOIN `able-rarity-417913`.`modeo_tt`.`dim_etltime` dt ON fi.datetime_id = dt.datetime_id
+INNER JOIN `able-rarity-417913`.`modeo_tt`.`dim_account` dp ON fi.account_id = da.account_id
+INNER JOIN `able-rarity-417913`.`modeo_tt`.`dim_match` dc ON fi.match_id = dm.match_id;
+
+
+[0m03:33:16.054065 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=able-rarity-417913&j=bq:US:83c59069-6e6a-4c70-b74e-b370d2d52e42&page=queryresults
+[0m03:33:16.484279 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Unrecognized name: da at [27:80]; reason: invalidQuery, location: query, message: Unrecognized name: da at [27:80]')
+[0m03:33:17.427622 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=able-rarity-417913&j=bq:US:6a7c9878-ccc1-459e-8ab8-20942f9e4aed&page=queryresults
+[0m03:33:17.813183 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=able-rarity-417913&j=bq:US:6a7c9878-ccc1-459e-8ab8-20942f9e4aed&page=queryresults
+[0m03:33:17.814370 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.fact_bet (execute): 03:33:15.304640 => 03:33:17.813942
+[0m03:33:17.821662 [debug] [Thread-1 (]: Database Error in model fact_bet (models/transform/fact_bet.sql)
+  Unrecognized name: da at [27:80]
+  compiled Code at target/run/mdtt_dbt/models/transform/fact_bet.sql
+[0m03:33:17.822488 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '833b6cfd-694a-4da2-8761-978bcfb39381', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76324a3a3510>]}
+[0m03:33:17.823387 [error] [Thread-1 (]: 4 of 4 ERROR creating sql view model modeo_tt.fact_bet ......................... [[31mERROR[0m in 2.54s]
+[0m03:33:17.824577 [debug] [Thread-1 (]: Finished running node model.mdtt_dbt.fact_bet
+[0m03:33:17.827156 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m03:33:17.827813 [debug] [MainThread]: Connection 'model.mdtt_dbt.fact_bet' was properly closed.
+[0m03:33:17.828394 [info ] [MainThread]: 
+[0m03:33:17.829123 [info ] [MainThread]: Finished running 4 view models in 0 hours 0 minutes and 6.92 seconds (6.92s).
+[0m03:33:17.831484 [debug] [MainThread]: Command end result
+[0m03:33:17.853612 [info ] [MainThread]: 
+[0m03:33:17.854445 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m03:33:17.855330 [info ] [MainThread]: 
+[0m03:33:17.856168 [error] [MainThread]:   Database Error in model fact_bet (models/transform/fact_bet.sql)
+  Unrecognized name: da at [27:80]
+  compiled Code at target/run/mdtt_dbt/models/transform/fact_bet.sql
+[0m03:33:17.856913 [info ] [MainThread]: 
+[0m03:33:17.857675 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=1 SKIP=0 TOTAL=4
+[0m03:33:17.859593 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 8.842609, "process_user_time": 5.015169, "process_kernel_time": 0.595625, "process_mem_max_rss": "232508", "process_out_blocks": "3552", "command_success": false, "process_in_blocks": "0"}
+[0m03:33:17.860789 [debug] [MainThread]: Command `dbt run` failed at 03:33:17.860530 after 8.84 seconds
+[0m03:33:17.861496 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x763262b9bc10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x763263015f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76324a108950>]}
+[0m03:33:17.862938 [debug] [MainThread]: Flushing usage events
+[0m03:35:43.562319 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76af7813abd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76af7813b510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76af7937db50>]}
+
+
+============================== 03:35:43.564611 | 25b2988f-5551-4ae6-844f-b4f888f370e3 ==============================
+[0m03:35:43.564611 [info ] [MainThread]: Running with dbt=1.7.10
+[0m03:35:43.565682 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'fail_fast': 'False', 'version_check': 'True', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'quiet': 'False', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'partial_parse': 'True', 'warn_error': 'None', 'log_cache_events': 'False', 'use_colors': 'True', 'log_format': 'default', 'log_path': '/usr/local/airflow/include/dbt/logs', 'use_experimental_parser': 'False', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'static_parser': 'True', 'introspect': 'True', 'no_print': 'None', 'target_path': 'None', 'indirect_selection': 'eager', 'debug': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])'}
+[0m03:35:44.845428 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '25b2988f-5551-4ae6-844f-b4f888f370e3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76af5f94f190>]}
+[0m03:35:44.959114 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '25b2988f-5551-4ae6-844f-b4f888f370e3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76af65297250>]}
+[0m03:35:44.960532 [info ] [MainThread]: Registered adapter: bigquery=1.7.6
+[0m03:35:44.987286 [debug] [MainThread]: checksum: b88efa780424265bbbd676e971356ada6a7ea9debd0a80a519a6d2707465340d, vars: {}, profile: , target: , version: 1.7.10
+[0m03:35:45.044695 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m03:35:45.045698 [debug] [MainThread]: Partial parsing: updated file: mdtt_dbt://models/transform/fact_bet.sql
+[0m03:35:45.193824 [debug] [MainThread]: 1603: static parser failed on transform/fact_bet.sql
+[0m03:35:45.236526 [debug] [MainThread]: 1602: parser fallback to jinja rendering on transform/fact_bet.sql
+[0m03:35:45.249767 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '25b2988f-5551-4ae6-844f-b4f888f370e3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76af5f8bf550>]}
+[0m03:35:45.268945 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '25b2988f-5551-4ae6-844f-b4f888f370e3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76af5fad9210>]}
+[0m03:35:45.269699 [info ] [MainThread]: Found 4 models, 1 source, 0 exposures, 0 metrics, 568 macros, 0 groups, 0 semantic models
+[0m03:35:45.270424 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '25b2988f-5551-4ae6-844f-b4f888f370e3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76af64fca310>]}
+[0m03:35:45.272780 [info ] [MainThread]: 
+[0m03:35:45.274198 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m03:35:45.277090 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_able-rarity-417913'
+[0m03:35:45.278040 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:35:45.714020 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_able-rarity-417913, now list_able-rarity-417913_modeo_tt)
+[0m03:35:45.714838 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m03:35:46.061404 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '25b2988f-5551-4ae6-844f-b4f888f370e3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76af5f503d50>]}
+[0m03:35:46.062467 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m03:35:46.063199 [info ] [MainThread]: 
+[0m03:35:46.068606 [debug] [Thread-1 (]: Began running node model.mdtt_dbt.dim_account
+[0m03:35:46.069743 [info ] [Thread-1 (]: 1 of 4 START sql view model modeo_tt.dim_account ............................... [RUN]
+[0m03:35:46.071414 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_able-rarity-417913_modeo_tt, now model.mdtt_dbt.dim_account)
+[0m03:35:46.072136 [debug] [Thread-1 (]: Began compiling node model.mdtt_dbt.dim_account
+[0m03:35:46.082414 [debug] [Thread-1 (]: Writing injected SQL for node "model.mdtt_dbt.dim_account"
+[0m03:35:46.084249 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.dim_account (compile): 03:35:46.072526 => 03:35:46.083784
+[0m03:35:46.085367 [debug] [Thread-1 (]: Began executing node model.mdtt_dbt.dim_account
+[0m03:35:46.141233 [debug] [Thread-1 (]: Writing runtime sql for node "model.mdtt_dbt.dim_account"
+[0m03:35:46.143046 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:35:46.190596 [debug] [Thread-1 (]: On model.mdtt_dbt.dim_account: /* {"app": "dbt", "dbt_version": "1.7.10", "profile_name": "mdtt_dbt", "target_name": "dev", "node_id": "model.mdtt_dbt.dim_account"} */
+
+
+  create or replace view `able-rarity-417913`.`modeo_tt`.`dim_account`
+  OPTIONS()
+  as WITH account_cte AS (
+	SELECT DISTINCT
+	    kindred_id as account_id
+	FROM `able-rarity-417913`.`modeo_tt`.`raw_matches`
+)
+SELECT
+    t.*
+FROM account_cte t;
+
+
+[0m03:35:46.830470 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=able-rarity-417913&j=bq:US:58036378-6ef7-40ee-b7ce-ee96c97593cd&page=queryresults
+[0m03:35:47.301276 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.dim_account (execute): 03:35:46.086228 => 03:35:47.300626
+[0m03:35:47.304369 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '25b2988f-5551-4ae6-844f-b4f888f370e3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76af5f54fb50>]}
+[0m03:35:47.306558 [info ] [Thread-1 (]: 1 of 4 OK created sql view model modeo_tt.dim_account .......................... [[32mCREATE VIEW (0 processed)[0m in 1.23s]
+[0m03:35:47.309650 [debug] [Thread-1 (]: Finished running node model.mdtt_dbt.dim_account
+[0m03:35:47.311531 [debug] [Thread-1 (]: Began running node model.mdtt_dbt.dim_etltime
+[0m03:35:47.313231 [info ] [Thread-1 (]: 2 of 4 START sql view model modeo_tt.dim_etltime ............................... [RUN]
+[0m03:35:47.316231 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.mdtt_dbt.dim_account, now model.mdtt_dbt.dim_etltime)
+[0m03:35:47.317266 [debug] [Thread-1 (]: Began compiling node model.mdtt_dbt.dim_etltime
+[0m03:35:47.322171 [debug] [Thread-1 (]: Writing injected SQL for node "model.mdtt_dbt.dim_etltime"
+[0m03:35:47.323268 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.dim_etltime (compile): 03:35:47.317747 => 03:35:47.322885
+[0m03:35:47.323957 [debug] [Thread-1 (]: Began executing node model.mdtt_dbt.dim_etltime
+[0m03:35:47.330798 [debug] [Thread-1 (]: Writing runtime sql for node "model.mdtt_dbt.dim_etltime"
+[0m03:35:47.332629 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:35:47.424746 [debug] [Thread-1 (]: On model.mdtt_dbt.dim_etltime: /* {"app": "dbt", "dbt_version": "1.7.10", "profile_name": "mdtt_dbt", "target_name": "dev", "node_id": "model.mdtt_dbt.dim_etltime"} */
+
+
+  create or replace view `able-rarity-417913`.`modeo_tt`.`dim_etltime`
+  OPTIONS()
+  as WITH datetime_cte AS (  
+  SELECT DISTINCT
+    etl_time AS datetime_id,
+    etl_time AS date_part,
+  FROM `able-rarity-417913`.`modeo_tt`.`raw_matches`
+)
+SELECT
+  datetime_id,
+  date_part as datetime,
+  EXTRACT(YEAR FROM date_part) AS year,
+  EXTRACT(MONTH FROM date_part) AS month,
+  EXTRACT(DAY FROM date_part) AS day,
+  EXTRACT(HOUR FROM date_part) AS hour,
+  EXTRACT(MINUTE FROM date_part) AS minute,
+FROM datetime_cte;
+
+
+[0m03:35:48.055030 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=able-rarity-417913&j=bq:US:ef5884a1-ff2d-4c72-9bb6-4fca620c4245&page=queryresults
+[0m03:35:48.506962 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.dim_etltime (execute): 03:35:47.324394 => 03:35:48.506611
+[0m03:35:48.508222 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '25b2988f-5551-4ae6-844f-b4f888f370e3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76af5f545610>]}
+[0m03:35:48.509165 [info ] [Thread-1 (]: 2 of 4 OK created sql view model modeo_tt.dim_etltime .......................... [[32mCREATE VIEW (0 processed)[0m in 1.19s]
+[0m03:35:48.510405 [debug] [Thread-1 (]: Finished running node model.mdtt_dbt.dim_etltime
+[0m03:35:48.511260 [debug] [Thread-1 (]: Began running node model.mdtt_dbt.dim_match
+[0m03:35:48.512181 [info ] [Thread-1 (]: 3 of 4 START sql view model modeo_tt.dim_match ................................. [RUN]
+[0m03:35:48.513492 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.mdtt_dbt.dim_etltime, now model.mdtt_dbt.dim_match)
+[0m03:35:48.514191 [debug] [Thread-1 (]: Began compiling node model.mdtt_dbt.dim_match
+[0m03:35:48.533109 [debug] [Thread-1 (]: Writing injected SQL for node "model.mdtt_dbt.dim_match"
+[0m03:35:48.534356 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.dim_match (compile): 03:35:48.514599 => 03:35:48.533860
+[0m03:35:48.535414 [debug] [Thread-1 (]: Began executing node model.mdtt_dbt.dim_match
+[0m03:35:48.543417 [debug] [Thread-1 (]: Writing runtime sql for node "model.mdtt_dbt.dim_match"
+[0m03:35:48.545925 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:35:48.600890 [debug] [Thread-1 (]: On model.mdtt_dbt.dim_match: /* {"app": "dbt", "dbt_version": "1.7.10", "profile_name": "mdtt_dbt", "target_name": "dev", "node_id": "model.mdtt_dbt.dim_match"} */
+
+
+  create or replace view `able-rarity-417913`.`modeo_tt`.`dim_match`
+  OPTIONS()
+  as WITH match_cte AS (
+	SELECT DISTINCT
+        to_hex(md5(cast(coalesce(cast(id as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(has_started as string), '_dbt_utils_surrogate_key_null_') as string))) as match_id,
+		has_started
+	FROM `able-rarity-417913`.`modeo_tt`.`raw_matches`
+)
+SELECT
+    t.*
+FROM match_cte t;
+
+
+[0m03:35:49.175034 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=able-rarity-417913&j=bq:US:03fa7275-ef62-46ce-aa6e-9b05576709f6&page=queryresults
+[0m03:35:49.586590 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.dim_match (execute): 03:35:48.536313 => 03:35:49.586289
+[0m03:35:49.587641 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '25b2988f-5551-4ae6-844f-b4f888f370e3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76af5f812c50>]}
+[0m03:35:49.588481 [info ] [Thread-1 (]: 3 of 4 OK created sql view model modeo_tt.dim_match ............................ [[32mCREATE VIEW (0 processed)[0m in 1.07s]
+[0m03:35:49.589581 [debug] [Thread-1 (]: Finished running node model.mdtt_dbt.dim_match
+[0m03:35:49.590629 [debug] [Thread-1 (]: Began running node model.mdtt_dbt.fact_bet
+[0m03:35:49.591510 [info ] [Thread-1 (]: 4 of 4 START sql view model modeo_tt.fact_bet .................................. [RUN]
+[0m03:35:49.592687 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.mdtt_dbt.dim_match, now model.mdtt_dbt.fact_bet)
+[0m03:35:49.593278 [debug] [Thread-1 (]: Began compiling node model.mdtt_dbt.fact_bet
+[0m03:35:49.604991 [debug] [Thread-1 (]: Writing injected SQL for node "model.mdtt_dbt.fact_bet"
+[0m03:35:49.606499 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.fact_bet (compile): 03:35:49.593629 => 03:35:49.605939
+[0m03:35:49.607432 [debug] [Thread-1 (]: Began executing node model.mdtt_dbt.fact_bet
+[0m03:35:49.617132 [debug] [Thread-1 (]: Writing runtime sql for node "model.mdtt_dbt.fact_bet"
+[0m03:35:49.618766 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:35:49.673353 [debug] [Thread-1 (]: On model.mdtt_dbt.fact_bet: /* {"app": "dbt", "dbt_version": "1.7.10", "profile_name": "mdtt_dbt", "target_name": "dev", "node_id": "model.mdtt_dbt.fact_bet"} */
+
+
+  create or replace view `able-rarity-417913`.`modeo_tt`.`fact_bet`
+  OPTIONS()
+  as WITH fct_bet_cte AS (
+    SELECT
+        id AS bet_id,
+        to_hex(md5(cast(coalesce(cast(id as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(has_started as string), '_dbt_utils_surrogate_key_null_') as string))) as match_id,
+        kindred_id AS account_id,
+        etl_time AS datetime_id,
+        bet_offer_name,
+        home_odd,
+        away_odd,
+    FROM `able-rarity-417913`.`modeo_tt`.`raw_matches`
+)
+SELECT
+    bet_id,
+    dt.datetime_id,
+    dm.match_id,
+    da.account_id,
+    bet_offer_name,
+    home_odd,
+    away_odd
+FROM fct_bet_cte fi
+INNER JOIN `able-rarity-417913`.`modeo_tt`.`dim_etltime` dt ON fi.datetime_id = dt.datetime_id
+INNER JOIN `able-rarity-417913`.`modeo_tt`.`dim_account` da ON fi.account_id = da.account_id
+INNER JOIN `able-rarity-417913`.`modeo_tt`.`dim_match` dm ON fi.match_id = dm.match_id;
+
+
+[0m03:35:50.362022 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=able-rarity-417913&j=bq:US:38ee0001-1192-4ebd-bc1a-9ba9a9aabcbf&page=queryresults
+[0m03:35:50.749397 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.fact_bet (execute): 03:35:49.608072 => 03:35:50.749096
+[0m03:35:50.750433 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '25b2988f-5551-4ae6-844f-b4f888f370e3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76af5f81fe10>]}
+[0m03:35:50.751240 [info ] [Thread-1 (]: 4 of 4 OK created sql view model modeo_tt.fact_bet ............................. [[32mCREATE VIEW (0 processed)[0m in 1.16s]
+[0m03:35:50.752363 [debug] [Thread-1 (]: Finished running node model.mdtt_dbt.fact_bet
+[0m03:35:50.754694 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m03:35:50.755287 [debug] [MainThread]: Connection 'model.mdtt_dbt.fact_bet' was properly closed.
+[0m03:35:50.755876 [info ] [MainThread]: 
+[0m03:35:50.756532 [info ] [MainThread]: Finished running 4 view models in 0 hours 0 minutes and 5.48 seconds (5.48s).
+[0m03:35:50.759540 [debug] [MainThread]: Command end result
+[0m03:35:50.784431 [info ] [MainThread]: 
+[0m03:35:50.785346 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m03:35:50.786300 [info ] [MainThread]: 
+[0m03:35:50.787699 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+[0m03:35:50.790153 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 7.2754116, "process_user_time": 5.001744, "process_kernel_time": 0.538036, "process_mem_max_rss": "231024", "process_out_blocks": "3552", "process_in_blocks": "0"}
+[0m03:35:50.791559 [debug] [MainThread]: Command `dbt run` succeeded at 03:35:50.791200 after 7.28 seconds
+[0m03:35:50.792697 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76af78173910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76af79815d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76af7caf2850>]}
+[0m03:35:50.793457 [debug] [MainThread]: Flushing usage events
+[0m03:40:19.354476 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d045c5b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d04594c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d045944d0>]}
+
+
+============================== 03:40:19.356673 | c8f00d75-3b87-404f-974a-0cf5890f0d94 ==============================
+[0m03:40:19.356673 [info ] [MainThread]: Running with dbt=1.7.10
+[0m03:40:19.357656 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'introspect': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'log_path': '/usr/local/airflow/include/dbt/logs', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'printer_width': '80', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'no_print': 'None', 'indirect_selection': 'eager', 'fail_fast': 'False', 'log_format': 'default', 'debug': 'False', 'target_path': 'None', 'static_parser': 'True', 'write_json': 'True', 'quiet': 'False', 'log_cache_events': 'False'}
+[0m03:40:20.631352 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c8f00d75-3b87-404f-974a-0cf5890f0d94', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8cebe8aa90>]}
+[0m03:40:20.747675 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c8f00d75-3b87-404f-974a-0cf5890f0d94', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d045b4cd0>]}
+[0m03:40:20.748753 [info ] [MainThread]: Registered adapter: bigquery=1.7.6
+[0m03:40:20.770370 [debug] [MainThread]: checksum: b88efa780424265bbbd676e971356ada6a7ea9debd0a80a519a6d2707465340d, vars: {}, profile: , target: , version: 1.7.10
+[0m03:40:20.789596 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m03:40:20.790450 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c8f00d75-3b87-404f-974a-0cf5890f0d94', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8cebe4b650>]}
+[0m03:40:22.132307 [debug] [MainThread]: 1603: static parser failed on transform/fact_bet.sql
+[0m03:40:22.170615 [debug] [MainThread]: 1602: parser fallback to jinja rendering on transform/fact_bet.sql
+[0m03:40:22.173066 [debug] [MainThread]: 1699: static parser successfully parsed transform/dim_etltime.sql
+[0m03:40:22.176828 [debug] [MainThread]: 1699: static parser successfully parsed transform/dim_account.sql
+[0m03:40:22.180601 [debug] [MainThread]: 1603: static parser failed on transform/dim_match.sql
+[0m03:40:22.188539 [debug] [MainThread]: 1602: parser fallback to jinja rendering on transform/dim_match.sql
+[0m03:40:22.351121 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c8f00d75-3b87-404f-974a-0cf5890f0d94', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8cebdb5390>]}
+[0m03:40:22.465203 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c8f00d75-3b87-404f-974a-0cf5890f0d94', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ceb4c01d0>]}
+[0m03:40:22.465864 [info ] [MainThread]: Found 4 models, 1 source, 0 exposures, 0 metrics, 568 macros, 0 groups, 0 semantic models
+[0m03:40:22.466503 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c8f00d75-3b87-404f-974a-0cf5890f0d94', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8cebed52d0>]}
+[0m03:40:22.468617 [info ] [MainThread]: 
+[0m03:40:22.469866 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m03:40:22.471839 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_able-rarity-417913'
+[0m03:40:22.472923 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:40:22.873866 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_able-rarity-417913, now list_able-rarity-417913_modeo_tt)
+[0m03:40:22.874672 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m03:40:23.217275 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c8f00d75-3b87-404f-974a-0cf5890f0d94', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8cebf9f6d0>]}
+[0m03:40:23.219017 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m03:40:23.220121 [info ] [MainThread]: 
+[0m03:40:23.223833 [debug] [Thread-1 (]: Began running node model.mdtt_dbt.dim_account
+[0m03:40:23.224704 [info ] [Thread-1 (]: 1 of 4 START sql table model modeo_tt.dim_account .............................. [RUN]
+[0m03:40:23.226136 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_able-rarity-417913_modeo_tt, now model.mdtt_dbt.dim_account)
+[0m03:40:23.226998 [debug] [Thread-1 (]: Began compiling node model.mdtt_dbt.dim_account
+[0m03:40:23.238323 [debug] [Thread-1 (]: Writing injected SQL for node "model.mdtt_dbt.dim_account"
+[0m03:40:23.239948 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.dim_account (compile): 03:40:23.227459 => 03:40:23.239171
+[0m03:40:23.241052 [debug] [Thread-1 (]: Began executing node model.mdtt_dbt.dim_account
+[0m03:40:23.263142 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:40:23.929845 [debug] [Thread-1 (]: Writing runtime sql for node "model.mdtt_dbt.dim_account"
+[0m03:40:23.931241 [debug] [Thread-1 (]: On model.mdtt_dbt.dim_account: /* {"app": "dbt", "dbt_version": "1.7.10", "profile_name": "mdtt_dbt", "target_name": "dev", "node_id": "model.mdtt_dbt.dim_account"} */
+
+  
+    
+
+    create or replace table `able-rarity-417913`.`modeo_tt`.`dim_account`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH account_cte AS (
+	SELECT DISTINCT
+	    kindred_id as account_id
+	FROM `able-rarity-417913`.`modeo_tt`.`raw_matches`
+)
+SELECT
+    t.*
+FROM account_cte t
+    );
+  
+[0m03:40:24.510819 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=able-rarity-417913&j=bq:US:01b77f39-8d1c-40bc-b11b-60bad2981a35&page=queryresults
+[0m03:40:26.531357 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.dim_account (execute): 03:40:23.241432 => 03:40:26.531022
+[0m03:40:26.533379 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c8f00d75-3b87-404f-974a-0cf5890f0d94', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8cebc2cbd0>]}
+[0m03:40:26.535135 [info ] [Thread-1 (]: 1 of 4 OK created sql table model modeo_tt.dim_account ......................... [[32mCREATE TABLE (563.0 rows, 10.8 KiB processed)[0m in 3.31s]
+[0m03:40:26.537947 [debug] [Thread-1 (]: Finished running node model.mdtt_dbt.dim_account
+[0m03:40:26.539547 [debug] [Thread-1 (]: Began running node model.mdtt_dbt.dim_etltime
+[0m03:40:26.540997 [info ] [Thread-1 (]: 2 of 4 START sql table model modeo_tt.dim_etltime .............................. [RUN]
+[0m03:40:26.543498 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.mdtt_dbt.dim_account, now model.mdtt_dbt.dim_etltime)
+[0m03:40:26.544799 [debug] [Thread-1 (]: Began compiling node model.mdtt_dbt.dim_etltime
+[0m03:40:26.551899 [debug] [Thread-1 (]: Writing injected SQL for node "model.mdtt_dbt.dim_etltime"
+[0m03:40:26.553667 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.dim_etltime (compile): 03:40:26.545538 => 03:40:26.553002
+[0m03:40:26.554752 [debug] [Thread-1 (]: Began executing node model.mdtt_dbt.dim_etltime
+[0m03:40:26.573799 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:40:27.167453 [debug] [Thread-1 (]: Writing runtime sql for node "model.mdtt_dbt.dim_etltime"
+[0m03:40:27.168777 [debug] [Thread-1 (]: On model.mdtt_dbt.dim_etltime: /* {"app": "dbt", "dbt_version": "1.7.10", "profile_name": "mdtt_dbt", "target_name": "dev", "node_id": "model.mdtt_dbt.dim_etltime"} */
+
+  
+    
+
+    create or replace table `able-rarity-417913`.`modeo_tt`.`dim_etltime`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH datetime_cte AS (  
+  SELECT DISTINCT
+    etl_time AS datetime_id,
+    etl_time AS date_part,
+  FROM `able-rarity-417913`.`modeo_tt`.`raw_matches`
+)
+SELECT
+  datetime_id,
+  date_part as datetime,
+  EXTRACT(YEAR FROM date_part) AS year,
+  EXTRACT(MONTH FROM date_part) AS month,
+  EXTRACT(DAY FROM date_part) AS day,
+  EXTRACT(HOUR FROM date_part) AS hour,
+  EXTRACT(MINUTE FROM date_part) AS minute,
+FROM datetime_cte
+    );
+  
+[0m03:40:27.730715 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=able-rarity-417913&j=bq:US:6557307d-95e5-40d4-b847-0e55eccc78bd&page=queryresults
+[0m03:40:29.700166 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.dim_etltime (execute): 03:40:26.555409 => 03:40:29.699805
+[0m03:40:29.701997 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c8f00d75-3b87-404f-974a-0cf5890f0d94', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8cebd06590>]}
+[0m03:40:29.703153 [info ] [Thread-1 (]: 2 of 4 OK created sql table model modeo_tt.dim_etltime ......................... [[32mCREATE TABLE (149.0 rows, 10.8 KiB processed)[0m in 3.16s]
+[0m03:40:29.704632 [debug] [Thread-1 (]: Finished running node model.mdtt_dbt.dim_etltime
+[0m03:40:29.705522 [debug] [Thread-1 (]: Began running node model.mdtt_dbt.dim_match
+[0m03:40:29.706313 [info ] [Thread-1 (]: 3 of 4 START sql table model modeo_tt.dim_match ................................ [RUN]
+[0m03:40:29.707439 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.mdtt_dbt.dim_etltime, now model.mdtt_dbt.dim_match)
+[0m03:40:29.708177 [debug] [Thread-1 (]: Began compiling node model.mdtt_dbt.dim_match
+[0m03:40:29.715968 [debug] [Thread-1 (]: Writing injected SQL for node "model.mdtt_dbt.dim_match"
+[0m03:40:29.716994 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.dim_match (compile): 03:40:29.708861 => 03:40:29.716608
+[0m03:40:29.717995 [debug] [Thread-1 (]: Began executing node model.mdtt_dbt.dim_match
+[0m03:40:29.721940 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:40:30.302976 [debug] [Thread-1 (]: Writing runtime sql for node "model.mdtt_dbt.dim_match"
+[0m03:40:30.304310 [debug] [Thread-1 (]: On model.mdtt_dbt.dim_match: /* {"app": "dbt", "dbt_version": "1.7.10", "profile_name": "mdtt_dbt", "target_name": "dev", "node_id": "model.mdtt_dbt.dim_match"} */
+
+  
+    
+
+    create or replace table `able-rarity-417913`.`modeo_tt`.`dim_match`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH match_cte AS (
+	SELECT DISTINCT
+        to_hex(md5(cast(coalesce(cast(id as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(has_started as string), '_dbt_utils_surrogate_key_null_') as string))) as match_id,
+		has_started
+	FROM `able-rarity-417913`.`modeo_tt`.`raw_matches`
+)
+SELECT
+    t.*
+FROM match_cte t
+    );
+  
+[0m03:40:30.889075 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=able-rarity-417913&j=bq:US:459c4660-a33c-4299-83f4-b91077d807b4&page=queryresults
+[0m03:40:32.932419 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.dim_match (execute): 03:40:29.718455 => 03:40:32.932111
+[0m03:40:32.933821 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c8f00d75-3b87-404f-974a-0cf5890f0d94', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8cebc5c210>]}
+[0m03:40:32.935723 [info ] [Thread-1 (]: 3 of 4 OK created sql table model modeo_tt.dim_match ........................... [[32mCREATE TABLE (1.4k rows, 12.1 KiB processed)[0m in 3.23s]
+[0m03:40:32.937288 [debug] [Thread-1 (]: Finished running node model.mdtt_dbt.dim_match
+[0m03:40:32.939135 [debug] [Thread-1 (]: Began running node model.mdtt_dbt.fact_bet
+[0m03:40:32.940481 [info ] [Thread-1 (]: 4 of 4 START sql table model modeo_tt.fact_bet ................................. [RUN]
+[0m03:40:32.942458 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.mdtt_dbt.dim_match, now model.mdtt_dbt.fact_bet)
+[0m03:40:32.944122 [debug] [Thread-1 (]: Began compiling node model.mdtt_dbt.fact_bet
+[0m03:40:32.956194 [debug] [Thread-1 (]: Writing injected SQL for node "model.mdtt_dbt.fact_bet"
+[0m03:40:32.957281 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.fact_bet (compile): 03:40:32.945395 => 03:40:32.956883
+[0m03:40:32.957970 [debug] [Thread-1 (]: Began executing node model.mdtt_dbt.fact_bet
+[0m03:40:32.964824 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:40:33.540613 [debug] [Thread-1 (]: Writing runtime sql for node "model.mdtt_dbt.fact_bet"
+[0m03:40:33.542060 [debug] [Thread-1 (]: On model.mdtt_dbt.fact_bet: /* {"app": "dbt", "dbt_version": "1.7.10", "profile_name": "mdtt_dbt", "target_name": "dev", "node_id": "model.mdtt_dbt.fact_bet"} */
+
+  
+    
+
+    create or replace table `able-rarity-417913`.`modeo_tt`.`fact_bet`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH fct_bet_cte AS (
+    SELECT
+        id AS bet_id,
+        to_hex(md5(cast(coalesce(cast(id as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(has_started as string), '_dbt_utils_surrogate_key_null_') as string))) as match_id,
+        kindred_id AS account_id,
+        etl_time AS datetime_id,
+        bet_offer_name,
+        home_odd,
+        away_odd,
+    FROM `able-rarity-417913`.`modeo_tt`.`raw_matches`
+)
+SELECT
+    bet_id,
+    dt.datetime_id,
+    dm.match_id,
+    da.account_id,
+    bet_offer_name,
+    home_odd,
+    away_odd
+FROM fct_bet_cte fi
+INNER JOIN `able-rarity-417913`.`modeo_tt`.`dim_etltime` dt ON fi.datetime_id = dt.datetime_id
+INNER JOIN `able-rarity-417913`.`modeo_tt`.`dim_account` da ON fi.account_id = da.account_id
+INNER JOIN `able-rarity-417913`.`modeo_tt`.`dim_match` dm ON fi.match_id = dm.match_id
+    );
+  
+[0m03:40:34.003442 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=able-rarity-417913&j=bq:US:094e9753-9ce5-4086-b157-53d37702b6bd&page=queryresults
+[0m03:40:36.315685 [debug] [Thread-1 (]: Timing info for model.mdtt_dbt.fact_bet (execute): 03:40:32.958415 => 03:40:36.315356
+[0m03:40:36.316897 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c8f00d75-3b87-404f-974a-0cf5890f0d94', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8cebbd0a50>]}
+[0m03:40:36.317792 [info ] [Thread-1 (]: 4 of 4 OK created sql table model modeo_tt.fact_bet ............................ [[32mCREATE TABLE (1.4k rows, 122.7 KiB processed)[0m in 3.38s]
+[0m03:40:36.319036 [debug] [Thread-1 (]: Finished running node model.mdtt_dbt.fact_bet
+[0m03:40:36.321872 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m03:40:36.322487 [debug] [MainThread]: Connection 'model.mdtt_dbt.fact_bet' was properly closed.
+[0m03:40:36.323031 [info ] [MainThread]: 
+[0m03:40:36.323764 [info ] [MainThread]: Finished running 4 table models in 0 hours 0 minutes and 13.85 seconds (13.85s).
+[0m03:40:36.326427 [debug] [MainThread]: Command end result
+[0m03:40:36.354592 [info ] [MainThread]: 
+[0m03:40:36.355989 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m03:40:36.357262 [info ] [MainThread]: 
+[0m03:40:36.358926 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+[0m03:40:36.361211 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 17.053137, "process_user_time": 6.404175, "process_kernel_time": 0.568015, "process_mem_max_rss": "231440", "process_out_blocks": "3552", "process_in_blocks": "0"}
+[0m03:40:36.362547 [debug] [MainThread]: Command `dbt run` succeeded at 03:40:36.362196 after 17.05 seconds
+[0m03:40:36.363485 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d04582bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d04594c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d090dbd50>]}
+[0m03:40:36.364613 [debug] [MainThread]: Flushing usage events

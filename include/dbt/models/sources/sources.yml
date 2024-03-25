@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: modeo_tt
+    database: able-rarity-417913
+
+    tables:
+      - name: raw_matches

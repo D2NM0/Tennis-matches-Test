@@ -1,0 +1,10 @@
+name: 'mdtt_dbt'
+config-version: 2
+profile: 'mdtt_dbt'
+
+quoting:
+  schema: true
+
+models:
+  mdtt_dbt:
+    materialized: table

@@ -1,0 +1,11 @@
+mdtt_dbt:
+  target: dev # this is the default target
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      keyfile: /usr/local/airflow/include/gcp/sa.json
+      project: able-rarity-417913
+      dataset: modeo_tt
+      threads: 1
+
